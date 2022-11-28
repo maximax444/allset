@@ -1,0 +1,21 @@
+section.login
+    .container
+        h1.login__title Вход
+        .login__links
+            a.active Соискатель
+            a(href="/login2.html") Работодатель
+        form.login__form
+            input(type="email" placeholder="E-mail" required)
+            input(type="password" placeholder="Пароль" required)
+            button Войти в личный кабинет
+        a.login__foggot(href="/pass.html")  Забыли пароль?
+        .login__or
+            span Или
+        .login__soc
+            a(href="")
+                img(src="../img/pages/login1.svg", alt="")
+            a(href="")
+                img(src="../img/pages/login2.svg", alt="")
+            a(href="")
+                img(src="../img/pages/login3.svg", alt="")
+        a.login__reg(href="/reg.html") Зарегистрироваться

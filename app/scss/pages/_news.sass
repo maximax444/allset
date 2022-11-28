@@ -1,0 +1,123 @@
+.news
+  padding-top: 76px
+  padding-bottom: 101px
+  &__title
+    margin-bottom: 54px
+    font-weight: 500
+    font-size: 55px
+    line-height: 54px
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 65px 48px
+  &__block
+    text-decoration: none
+    color: #000
+  &__img
+    display: block
+    width: 100%
+    height: 175px
+    border-radius: 12px
+    overflow: hidden
+    margin-bottom: 30px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      transition: all 0.3s
+  &__date
+    font-weight: 400
+    font-size: 16px
+    line-height: 158.7%
+    display: block
+    padding-bottom: 12px
+    position: relative
+    &::after
+      content: ""
+      width: 43px
+      height: 2px
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      background-color: #357D3D
+      transition: all 0.3s
+  &__name
+    display: block
+    font-size: 16px
+    line-height: 158.7%
+    padding-top: 9px
+  &__block
+    &:hover
+      .news
+        &__img
+          img
+            transform: scale(1.1)
+        &__date::after
+          width: 100%
+  &__pag
+    padding-top: 58px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    grid-gap: 10px
+    a
+      width: 48px
+      height: 48px
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #357D3D
+      font-size: 16px
+      line-height: 112.5%
+      text-decoration: none
+      &:hover
+        color: #fff
+        background: #357D3D
+      &.news
+        &__prev, &__next
+          width: 15px
+          padding-bottom: 1px
+          &:hover
+            background: transparent
+          &.disabled
+            filter: grayscale(1)
+            pointer-events: none
+    span.current
+      width: 48px
+      height: 48px
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #fff
+      background: #357D3D
+      font-size: 16px
+      line-height: 112.5%
+      text-decoration: none
+@media(max-width: 991px)
+  .news__wrap
+    grid-template-columns: repeat(3, 1fr)
+@media(max-width: 767px)
+  .news__wrap
+    grid-template-columns: repeat(2, 1fr)
+@media(max-width: 575px)
+  .news
+    padding-top: 52px
+    padding-bottom: 106px
+    &__wrap
+      grid-template-columns: repeat(1, 1fr)
+      grid-gap: 60px
+    &__title
+      font-size: 40px
+      line-height: 98.7%
+      margin-bottom: 52px
+    &__pag
+      justify-content: center
+@media(max-width: 365px)
+  .news
+    &__pag
+      a, span.current
+        width: 30px
+        height: 30px

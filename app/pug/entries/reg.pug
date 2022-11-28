@@ -1,0 +1,22 @@
+section.login
+    .container
+        h1.login__title Регистрация
+        .login__links
+            a.active Соискатель
+            a(href="/reg2.html") Работодатель
+        form.reg__form
+            .reg__form-wrap
+                .reg__form-col
+                    input(type="text" placeholder="Имя" required)
+                    input(type="text" placeholder="Фамилия" required)
+                    input(type="text" placeholder="Отчество" required)
+                    input(type="text" placeholder="Дата рождения" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required)
+                .reg__form-col
+                    input(type="text" placeholder="Страна проживания" required)
+                    input(type="text" placeholder="Город проживания" required)
+                    input(type="email" placeholder="E-mail" required)
+                    input(type="tel" placeholder="Телефон" required)
+            input(type="password" placeholder="Пароль" required)
+            button Зарегистрироваться
+        .login__polit Регистрируясь, вы принимаете условия использования платформы Allset и даете Согласие на обработку персональных данных
+        a.login__reg(href="/login.html") Войти

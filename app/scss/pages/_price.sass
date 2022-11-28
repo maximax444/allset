@@ -1,0 +1,101 @@
+.price
+  padding-top: 75px
+  padding-bottom: 120px
+  &__title
+    font-weight: 500
+    font-size: 55px
+    line-height: 54px
+    margin-bottom: 50px
+  &__tabs
+    display: flex
+    align-items: center
+    margin-bottom: 73px
+    border-bottom: 1px solid #357D3D
+    width: 290px
+    justify-content: space-between
+    button
+      font-family: 'Gilroy'
+      cursor: pointer
+      padding: 30px 0
+      font-weight: 400
+      font-size: 30px
+      line-height: 98.7%
+      border: 0px
+      border-bottom: 4px solid transparent
+      margin-bottom: -2px
+      background-color: transparent
+      @include trs
+      &.active, &:hover
+        border-bottom: 4px solid #357D3D
+  &__cont
+    &-block
+      display: none
+      &.active
+        display: block
+  .table1
+    table
+      border-collapse: collapse
+      tr
+        td
+          width: 205px
+          border: 1px solid #000000
+          padding: 32px 38px
+          font-size: 20px
+          line-height: 158.7%
+          text-align: center
+          &:first-child
+            width: calc(100% - 615px)
+            text-align: left
+        &:first-child
+          td
+            background: #D9D9D9
+            line-height: 110.2%
+            &:first-child
+              background: transparent
+  .table2
+    table
+      border-collapse: collapse
+      tr
+        td
+          width: 307px
+          border: 1px solid #000000
+          padding: 32px 38px
+          font-size: 20px
+          line-height: 158.7%
+          text-align: center
+          &:first-child
+            width: calc(100% - 615px)
+            text-align: left
+        &:first-child
+          td
+            background: #D9D9D9
+            line-height: 110.2%
+            &:first-child
+              background: transparent
+        &.title
+          font-weight: 500
+          td:first-child
+            background: #D9D9D9
+          td:last-child
+            width: 615px
+@media(max-width: 767px)
+  .price
+    padding-top: 52px
+    padding-bottom: 120px
+    &__title
+      margin-bottom: 22px
+      font-size: 40px
+      line-height: 98.7%
+    &__tabs
+      width: 200px
+      margin-bottom: 64px
+      button
+        font-size: 25px
+        line-height: 98.7%
+    .table1, .table2
+      overflow-x: scroll
+      margin-left: -15px
+      margin-right: -15px
+    table
+      width: 1000px
+      margin: 0 15px

@@ -1,0 +1,764 @@
+.home
+  &-video
+    padding: 88px 0
+    &__wrap
+      height: 450px
+      border-radius: 12px
+      overflow: hidden
+      position: relative
+      display: block
+      &>img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__cont
+      position: absolute
+      left: 120px
+      top: 50%
+      margin-top: -43px
+      display: flex
+      align-items: center
+    &__play
+      width: 86px
+      height: 86px
+      display: flex
+      justify-content: center
+      align-items: center
+      background: #357D3D
+      border-radius: 143px
+      padding-left: 5px
+      margin-right: 70px
+      position: relative
+      z-index: 2
+      &::before
+        content: ""
+        display: block
+        width: 99%
+        height: 99%
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -43px
+        margin-top: -43px
+        border: 1px solid #fff
+        border-radius: 50%
+        transform: scale(2)
+        opacity: 0
+        animation: video2 2s infinite ease-in-out
+        z-index: -1
+      &::after
+        content: ""
+        display: block
+        width: 99%
+        height: 99%
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -43px
+        margin-top: -43px
+        border: 1px solid #fff
+        border-radius: 50%
+        transform: scale(1.5)
+        opacity: 0.5
+        animation: video1 2s infinite ease-in-out
+        z-index: -1
+    &__text
+      h2
+        font-weight: 500
+        font-size: 40px
+        line-height: 98.7%
+        color: #FFFFFF
+        margin-bottom: 19px
+      p
+        font-weight: 400
+        font-size: 16px
+        line-height: 158.7%
+        color: #FFFFFF
+  &-about
+    padding-top: 6px
+    padding-bottom: 43px
+    &__top
+      margin-bottom: 50px
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__title
+      font-weight: 500
+      font-size: 55px
+      line-height: 54px
+    &__more
+      font-weight: 500
+      font-size: 20px
+      line-height: 98.7%
+      color: #357D3D
+      display: flex
+      align-items: center
+      grid-gap: 22px
+      text-decoration: none
+      &:hover
+        grid-gap: 30px
+    &__wrap
+      display: flex
+      justify-content: space-between
+    &__img
+      height: 450px
+      width: calc((100% - 48px)/2)
+      position: relative
+      img
+        width: 100%
+        height: 100%
+        border-radius: 12px
+        object-fit: cover
+    &__buy
+      bottom: 54px
+      left: 50%
+      width: 310px
+      margin-left: -155px
+      height: 58px
+      background: #357D3D
+      border: 1px solid #357D3D
+      border-radius: 143px
+      font-size: 16px
+      line-height: 158.7%
+      color: #FFFFFF
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      text-decoration: none
+      &:hover
+        background-color: darken(#357D3D, 3)
+    &__cont
+      width: calc((100% - 48px)/2)
+      h3
+        padding-top: 39px
+        margin-bottom: 28px
+        font-weight: 500
+        font-size: 40px
+        line-height: 98.7%
+      p
+        font-size: 16px
+        line-height: 158.7%
+        margin-bottom: 25px
+  &-more
+    &__wrap
+      display: flex
+      justify-content: space-between
+    &__block
+      width: calc((100% - 48px)/2)
+      border: 1px solid #4E4E4E
+      border-radius: 12px
+      padding: 63px 46px
+      padding-bottom: 109px
+      display: flex
+      align-items: center
+      position: relative
+      text-decoration: none
+    &__img
+      width: 96px
+      height: 96px
+      background: #357D3D
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      margin-right: 50px
+      @include trs
+      path
+        @include trs
+    &__name
+      font-weight: 500
+      font-size: 40px
+      line-height: 98.7%
+      color: #000000
+      max-width: 250px
+      @include trs
+    &__link
+      position: absolute
+      bottom: 48px
+      right: 43px
+      path
+        @include trs
+    &__block
+      &:hover
+        background: #357D3D
+        border: 1px solid #357D3D
+        .home-more
+          &__img
+            background: #fff
+            g path
+              fill: #357D3D
+          &__name
+            color: #fff
+          &__link
+            path
+              stroke: #fff
+  &-work
+    padding: 80px 0
+    &__right
+      display: flex
+      align-items: center
+      grid-gap: 40px
+    &__nav
+      display: none
+      .swiper-pagination-bullet
+        width: 15px
+        height: 15px
+        background: #D9D9D9
+        opacity: 1
+        filter: none
+        margin: 0 7px
+        &.swiper-pagination-bullet-active
+          background: #357D3D
+    &__top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 67px
+    &__arrows
+      display: flex
+      align-items: center
+      grid-gap: 45px
+    &__prev, &__next
+      cursor: pointer
+    &__title
+      font-weight: 500
+      font-size: 55px
+      line-height: 54px
+    &__block
+      border: 1px solid #4E4E4E
+      border-radius: 12px
+      padding: 18px 20px
+      padding-bottom: 36px
+      display: block
+      @include trs
+      text-decoration: none
+    &__bottom
+      display: flex
+      justify-content: flex-end
+      padding-top: 45px
+    &__all
+      font-weight: 500
+      font-size: 20px
+      line-height: 98.7%
+      color: #357D3D
+      display: flex
+      align-items: center
+      grid-gap: 22px
+      text-decoration: none
+      &:hover
+        grid-gap: 30px
+    &__main
+      padding-bottom: 44px
+      border-bottom: 1px solid #D9D9D9
+      display: flex
+      align-items: center
+      margin-bottom: 32px
+    &__img
+      margin-right: 23px
+      width: 96px
+      height: 96px
+      border-radius: 50%
+      border: 1px solid #D9D9D9
+      display: flex
+      justify-content: center
+      align-items: center
+      @include trs
+    &__name
+      font-weight: 500
+      font-size: 25px
+      line-height: 98.7%
+      color: #000000
+      max-width: 110px
+      @include trs
+    &__el
+      margin-top: 16px
+      display: flex
+      align-items: center
+      font-weight: 500
+      font-size: 16px
+      line-height: 158.7%
+      color: #000000
+      padding-left: 30px
+      @include trs
+      path
+        @include trs
+    &__icon
+      width: 26px
+      margin-right: 22px
+      display: flex
+    &__block:hover
+      background: #357D3D
+      border: 1px solid #357D3D
+      .home-work
+        &__name, &__el
+          color: #fff
+          path
+            fill: #fff
+        &__img
+          background-color: #fff
+  &-vac
+    &__right
+      display: flex
+      align-items: center
+      grid-gap: 40px
+    &__nav
+      .swiper-pagination-bullet
+        width: 15px
+        height: 15px
+        background: #D9D9D9
+        opacity: 1
+        filter: none
+        margin: 0 7px
+        &.swiper-pagination-bullet-active
+          background: #357D3D
+    &__top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 67px
+    &__arrows
+      display: flex
+      align-items: center
+      grid-gap: 45px
+    &__prev, &__next
+      cursor: pointer
+    &__title
+      font-weight: 500
+      font-size: 55px
+      line-height: 54px
+    &__block
+      border: 1px solid #787878
+      border-radius: 12px
+      padding: 69px 55px
+      padding-bottom: 80px
+      color: #000000
+      text-decoration: none
+    &__name
+      margin-bottom: 13px
+      font-weight: 500
+      font-size: 40px
+      line-height: 98.7%
+    &__price
+      font-size: 20px
+      line-height: 158.7%
+      margin-bottom: 30px
+    &__links
+      font-size: 16px
+      line-height: 158.7%
+      color: #357D3D
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+      span
+        &:nth-child(2)
+          padding-left: 25px
+          margin-left: 25px
+          position: relative
+          &::before
+            content: ""
+            display: block
+            width: 1px
+            height: 13px
+            top: 6px
+            left: 0
+            background-color: #357D3D
+            position: absolute
+    &__descr
+      font-weight: 400
+      font-size: 16px
+      line-height: 158.7%
+      color: #787878
+  &-news
+    padding-top: 80px
+    padding-bottom: 90px
+    &__right
+      display: flex
+      align-items: center
+      grid-gap: 40px
+    &__nav
+      .swiper-pagination-bullet
+        width: 15px
+        height: 15px
+        background: #D9D9D9
+        opacity: 1
+        filter: none
+        margin: 0 7px
+        &.swiper-pagination-bullet-active
+          background: #357D3D
+    &__top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 67px
+    &__arrows
+      display: flex
+      align-items: center
+      grid-gap: 45px
+    &__prev, &__next
+      cursor: pointer
+    &__title
+      font-weight: 500
+      font-size: 55px
+      line-height: 54px
+    &__block
+      border-top: 2px solid #D9D9D9
+      position: relative
+      text-decoration: none
+      &::before
+        content: ""
+        display: block
+        height: 43px
+        width: 2px
+        position: absolute
+        right: 0
+        top: 0
+        background-color: #D9D9D9
+      &:first-child
+        &::after
+          content: ""
+          display: block
+          height: 43px
+          width: 2px
+          position: absolute
+          left: 0
+          top: 0
+          background-color: #D9D9D9
+    &__date
+      display: block
+      padding: 20px 10px
+      font-size: 16px
+      line-height: 158.7%
+      color: #357D3D
+    &__name
+      display: block
+      font-size: 16px
+      line-height: 158.7%
+      color: #000000
+      padding-right: 10px
+      @include trs
+    &__block:hover
+      .home-news__name
+        color: #357D3D
+.main
+  position: relative
+  &::before
+    content: ""
+    display: block
+    width: calc((100% - 1185px) / 2 + 776px)
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: url('../img/main/main.png') center no-repeat
+    background-size: cover
+    border-radius: 0px 0px 29px 29px
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__cont
+    width: 776px
+  &__right
+    width: calc(100% - 776px)
+    padding-top: 75px
+    padding-left: 100px
+  &__subtitle
+    font-weight: 500
+    font-size: 20px
+    line-height: 98.7%
+    margin-bottom: 55px
+    text-transform: lowercase
+  &-features
+    &__block
+      margin-bottom: 35px
+      display: flex
+      align-items: center
+    &__img
+      width: 35px
+      margin-right: 30px
+      display: flex
+    &__text
+      width: calc(100% - 65px)
+      font-weight: 500
+      font-size: 16px
+      line-height: 129.2%
+  &__logo
+    padding-top: 80px
+    padding-bottom: 65px
+    position: relative
+    z-index: 2
+  &__title
+    margin-bottom: 62px
+    font-weight: 500
+    font-size: 55px
+    line-height: 54px
+    color: #FFFFFF
+    position: relative
+    z-index: 2
+  &__dop
+    padding-left: 57px
+    line-height: 55px
+    height: 55px
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    border-left: 2px solid #E9E9E9
+    top: 15px
+    left: 350px
+    display: flex
+    align-items: center
+    position: absolute
+    padding-right: 20px
+    cursor: pointer
+  &__form
+    margin-bottom: 137px
+    position: relative
+    z-index: 2
+    width: 700px
+    height: 86px
+    input
+      width: 100%
+      height: 100%
+      background: #FFFFFF
+      border-radius: 240px
+      padding-left: 33px
+      border: 0
+      font-family: 'Gilroy'
+      font-weight: 500
+      font-size: 16px
+      line-height: 19px
+      color: #000000
+      &:focus
+        outline: none
+    button
+      width: 58px
+      height: 58px
+      border-radius: 50%
+      background: #357D3D
+      position: absolute
+      top: 14px
+      border: 0px
+      cursor: pointer
+      right: 14px
+@media(max-width: 1199px)
+  .home
+    &-more
+      &__img
+        margin-right: 20px
+  .main
+    &__cont
+      width: 500px
+    &__form
+      width: 100%
+    &__dop
+      left: 220px
+      padding: 0 15px
+    &__right
+      width: calc(100% - 500px)
+    &::before
+      width: calc((100% - 940px) / 2 + 500px)
+@media(max-width: 991px)
+  .main
+    &__wrap
+      display: block
+    &::before
+      width: 100%
+      height: 600px
+    &__right
+      width: 100%
+      padding-left: 0
+  .home
+    &-about
+      &__wrap
+        display: block
+      &__img, &__cont
+        width: 100%
+    &-more
+      &__wrap
+        display: block
+      &__block
+        margin-bottom: 40px
+        width: 100%
+      &__img
+        margin-right: 50px
+    &-work
+      &__top
+        display: block
+      &__title
+        margin-bottom: 30px
+      &__right
+        flex-direction: column-reverse
+      &__nav
+        display: flex
+        justify-content: center
+    &-vac
+      &__top
+        display: block
+      &__title
+        margin-bottom: 30px
+      &__right
+        flex-direction: column-reverse
+      &__nav
+        display: flex
+        justify-content: center
+    &-news
+      &__top
+        display: block
+      &__title
+        margin-bottom: 30px
+      &__right
+        flex-direction: column-reverse
+      &__nav
+        display: flex
+        justify-content: center
+@media(max-width: 767px)
+  .home
+    &-video
+      &__wrap
+        height: 300px
+      &__cont
+        left: 50%
+        margin-left: -43px
+      &__text
+        display: none
+      &__play
+        margin-right: 0
+@media(max-width: 575px)
+  .main
+    &::before
+      height: 400px
+    &__dop
+      padding: 0
+      width: 24px
+      height: 24px
+      background: url('../img/main/main-dop.svg') center no-repeat
+      left: auto
+      right: 100px
+      top: 32px
+      border: 0
+      span
+        display: none
+    &__right
+      padding-top: 30px
+    &__form
+      width: 100%
+      margin-bottom: 50px
+    &__cont
+      width: 100%
+    &__logo
+      padding-top: 33px
+      padding-bottom: 24px
+    &__title
+      font-size: 40px
+      line-height: 98.7%
+      margin-bottom: 50px
+      max-width: 280px
+  .home
+    &-video
+      padding-top: 0
+      padding-bottom: 0
+      &__play
+        width: 86px
+        height: 86px
+    &-about
+      padding-top: 46px
+      padding-bottom: 90px
+      position: relative
+      &__top
+        margin-bottom: 0
+      &__more
+        position: absolute
+        right: 15px
+        bottom: 50px
+      &__title
+        margin-bottom: 44px
+        font-size: 40px
+        line-height: 98.7%
+      &__img
+        height: 330px
+      &__buy
+        left: 15px
+        margin-left: 0
+        width: calc(100% - 30px)
+        bottom: 33px
+      &__cont
+        h3
+          padding-top: 61px
+          margin-bottom: 29px
+    &-more
+      &__block
+        margin-bottom: 30px
+        padding: 27px 25px
+        padding-bottom: 70px
+      &__img
+        width: 77px
+        height: 77px
+        margin-right: 20px
+      &__name
+        font-size: 30px
+        line-height: 98.7%
+        max-width: 180px
+      &__link
+        bottom: 28px
+        right: 28px
+    &-work
+      padding-top: 30px
+      padding-bottom: 10px
+      &__title
+        font-size: 40px
+        line-height: 98.7%
+        margin-bottom: 67px
+      &__arrows
+        width: 100%
+        justify-content: space-between
+      &__prev, &__next
+        width: 40%
+        overflow: hidden
+        display: flex
+      &__next
+        justify-content: flex-end
+    &-vac
+      padding-top: 30px
+      padding-bottom: 10px
+      &__title
+        font-size: 40px
+        line-height: 98.7%
+        margin-bottom: 67px
+      &__arrows
+        width: 100%
+        justify-content: space-between
+      &__prev, &__next
+        width: 40%
+        overflow: hidden
+        display: flex
+      &__next
+        justify-content: flex-end
+      &__block
+        padding: 45px 40px
+    &-news
+      padding-top: 30px
+      padding-bottom: 78px
+      &__title
+        font-size: 40px
+        line-height: 98.7%
+        margin-bottom: 67px
+      &__arrows
+        width: 100%
+        justify-content: space-between
+      &__prev, &__next
+        width: 40%
+        overflow: hidden
+        display: flex
+      &__next
+        justify-content: flex-end
+@media(max-width: 355px)
+  .home
+    &-more
+      &__name
+        font-size: 24px
+        max-width: 120px
+    &-vac
+      &__block
+        padding: 35px 20px
+      &__links
+        font-size: 14px

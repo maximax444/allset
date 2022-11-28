@@ -1,0 +1,211 @@
+.about
+  padding-top: 76px
+  padding-bottom: 118px
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__block
+    padding: 43px 63px
+    padding-bottom: 31px
+    border: 1px solid #4E4E4E
+    border-radius: 12px
+    width: 570px
+  &__icon
+    height: 86px
+    margin-bottom: 48px
+  &__name
+    margin-bottom: 27px
+    font-weight: 500
+    font-size: 40px
+    line-height: 98.7%
+  &__descr
+    margin-bottom: 32px
+    font-weight: 400
+    font-size: 16px
+    line-height: 158.7%
+  &__item
+    display: flex
+    margin-bottom: 20px
+    &-img
+      width: 26px
+      text-align: center
+      margin-right: 20px
+      padding-top: 3px
+    &-text
+      width: calc(100% - 46px)
+      font-size: 16px
+      line-height: 158.7%
+  &-top
+    padding-top: 76px
+    padding-bottom: 187px
+    background: url('../img/pages/about-bg.jpg') center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &__title
+      font-weight: 500
+      font-size: 55px
+      line-height: 54px
+      color: #000000
+      max-width: 650px
+  &-main
+    &__block
+      display: flex
+      margin-bottom: 51px
+    &__img
+      width: 569px
+      height: 334px
+      border-radius: 12px
+      overflow: hidden
+      margin-right: 48px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__cont
+      width: calc(100% - 617px)
+      padding-top: 27px
+    &__title
+      font-weight: 500
+      font-size: 40px
+      line-height: 98.7%
+      margin-bottom: 29px
+    &__text
+      font-weight: 400
+      font-size: 16px
+      line-height: 158.7%
+      color: #000000
+.team
+  padding-top: 44px
+  padding-bottom: 115px
+  &__arrows
+    display: none
+  &__title
+    font-weight: 500
+    font-size: 55px
+    line-height: 54px
+    margin-bottom: 33px
+  &__subtitle
+    margin-bottom: 50px
+    font-weight: 500
+    font-size: 20px
+    line-height: 158.7%
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__block
+    width: 200px
+  &__img
+    width: 200px
+    height: 200px
+    border-radius: 50%
+    overflow: hidden
+    margin-bottom: 35px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__name
+    margin-bottom: 14px
+    font-weight: 700
+    font-size: 20px
+    line-height: 98.7%
+  &__descr
+    font-weight: 400
+    font-size: 16px
+    line-height: 158.7%
+@media(max-width: 1199px)
+  .about
+    &__block
+      width: 460px
+      padding-left: 30px
+      padding-right: 30px
+    &-main
+      &__img
+        margin-right: 40px
+        width: 460px
+      &__cont
+        width: 460px
+  .team
+    &__block
+      width: 180px
+    &__img
+      width: 180px
+      height: 180px
+    &__descr
+      font-size: 14px
+@media(max-width: 991px)
+  .about
+    &__block
+      width: 100%
+      margin-bottom: 40px
+    &__wrap
+      display: block
+  .team
+    &__wrap
+      grid-gap: 40px
+      justify-content: center
+      flex-wrap: wrap
+@media(max-width: 767px)
+  .about
+    &-main
+      &__block
+        display: block
+      &__img
+        width: 100%
+        height: 200px
+      &__cont
+        width: 100%
+  .team
+    &__wrap
+      flex-wrap: nowrap
+      justify-content: flex-start
+      display: flex
+      grid-gap: 0
+    &__arrows
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__prev
+      padding: 45px 0
+    &__next
+      padding: 45px 0
+@media(max-width: 575px)
+  .about
+    padding-top: 62px
+    padding-bottom: 31px
+    &__block
+      margin-bottom: 31px
+      padding: 43px 31px
+    &__name
+      font-size: 30px
+    &-top
+      padding-top: 76px
+      padding-bottom: 154px
+      background: url('../img/pages/about-bg-mob.jpg') center no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+      &__title
+        font-size: 40px
+        line-height: 98.7%
+        max-width: 218px
+    &-main
+      &__cont
+        padding-top: 48px
+  .team
+    padding-bottom: 70px
+    &__title
+      font-size: 40px
+      line-height: 98.7%
+      margin-bottom: 43px
+    &__subtitle
+      font-size: 20px
+      line-height: 158.7%
+    &__img
+      width: 150px
+      height: 150px
+      max-width: 100%
+      margin-bottom: 26px
+    &__name
+      font-size: 20px
+      line-height: 98.7%
+      margin-bottom: 14px

@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Gilroy';
+}
+
+a {
+	transition: all 0.3s;
+}
+
+.container{
+	max-width: 1185px;
+	width: 100%;
+	margin: 0 auto;
+
+	@media (max-width: $max-xl) {
+		max-width: 960px;
+	}
+	@media (max-width: $max-lg) {
+		max-width: 720px;
+	}
+	@media (max-width: $max-md) {
+		max-width: 540px;
+	}
+	@media (max-width: $max-sm) {
+		padding: 0 15px;
+		max-width: 100%;
+	}
+}
+@keyframes video1 {
+	0% {
+		transform: scale(1.5);
+		opacity: 0.5;
+	}
+	49% {
+		transform: scale(2);
+		opacity: 0;
+	}
+	51% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.5);
+		opacity: 0.5;
+	}
+}
+@keyframes video2 {
+	0% {
+		transform: scale(2);
+		opacity: 0;
+	}
+	1% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.5);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+
+
+.map{
+	width: 100%;
+	background-color: #be4;
+	height: 900px;
+	@media (max-width: $max-sm) {
+		height: 300px;
+	}
+}

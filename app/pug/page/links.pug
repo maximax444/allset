@@ -1,0 +1,47 @@
+extends ../template
+
+block content
+
+	<br><br>
+
+	.container
+
+		| <a href='/'>Главная</a> <br>
+		| <a href='/login.html'>Вход (соискатель)</a> <br>
+		| <a href='/login2.html'>Вход (работодатель)</a> <br>
+		| <a href='/pass.html'>Забыли пароль</a> <br>
+		| <a href='/back.html'>Восстановление доступа</a> <br>
+		| <a href='/reg.html'>Регистрация (соискатель)</a> <br>
+		| <a href='/reg.html'>Регистрация (работодатель)</a> <br>
+		| <a href='/contacts.html'>Контакты</a> <br>
+		| <a href='/price.html'>Тарифы</a> <br>
+		| <a href='/news.html'>Новости</a> <br>
+		| <a href='/article.html'>Новость</a> <br>
+		| <a href='/about.html' >О компании</a> <br>
+		| <a href='/policy.html'>Правовая информация</a> <br>
+		| <a href='/404.html'>404</a> <br>
+	style.
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			grid-gap: 15px 20px;
+			padding-top: 60px;
+		}
+		br {
+			display: none;
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #357D3D;
+			border-radius: 143px;
+			width: 260px;
+			height: 58px;
+			color: #fff;
+			text-decoration: none;
+		}
+		a.disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}

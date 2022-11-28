@@ -1,0 +1,27 @@
+section.login
+    .container
+        h1.login__title Регистрация
+        .login__links
+            a(href="/reg.html") Соискатель
+            a.active Работодатель
+        form.reg__form.back__form
+            .reg__form-wrap
+                .reg__form-col
+                    input(type="text" placeholder="Название организации" required)
+                    input(type="text" placeholder="ИНН" required)
+                    input(type="text" placeholder="КПП" required)
+                    input(type="text" placeholder="ОГРН" required)
+                    input(type="text" placeholder="Банковские реквизиты" required)
+                    input(type="text" placeholder="данные ЭДО (Провайдер, id-номер)" required)
+                    input(type="text" placeholder="Страна" required)
+                .reg__form-col
+                    input(type="text" placeholder="Город" required)
+                    input(type="text" placeholder="Юридический адрес" required)
+                    input(type="text" placeholder="Адрес фактический" required)
+                    input(type="text" placeholder="Контактное лицо" required)
+                    input(type="tel" placeholder="Контактный номер телефона" required)
+                    input(type="email" placeholder="Контактный e-mail" required)
+                    input(type="password" placeholder="Пароль" required)
+            button Зарегистрироваться в личном кабинете
+        .login__polit Регистрируясь, вы принимаете условия использования платформы Allset и даете Согласие на обработку персональных данных
+        a.login__reg(href="/login2.html") Войти
