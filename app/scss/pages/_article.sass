@@ -114,6 +114,11 @@
     &__block
       display: block
       margin-bottom: 65px
+      text-decoration: none
+      color: #000000
+      &:hover
+        .article-aside__img img
+          transform: scale(1.1)
     &__date
       font-size: 16px
       line-height: 158.7%
@@ -147,6 +152,7 @@
         height: 100%
         width: 100%
         object-fit: cover
+        @include trs
     &__text
       display: block
       font-size: 16px
@@ -163,7 +169,8 @@
   &-top
     padding-top: 76px
     padding-bottom: 180px
-    background: url('../img/pages/article.jpg') center no-repeat
+    background-repeat: no-repeat
+    background-position: center
     background-size: cover
     position: relative
     &::after
@@ -215,6 +222,10 @@
       font-size: 16px
       line-height: 158.7%
       color: #000000
+  &-share
+    span
+      display: block
+      margin-bottom: 10px
 @media(max-width: 1199px)
   .article
     &__cont

@@ -1,4 +1,4 @@
-section.article-top
+section.article-top(style="background: url('../img/pages/article.jpg');")
     .container
         h1.article-top__title Рынок труда и&nbsp;зарплаты в&nbsp;сфере дизайна
         .article-top__date 28.09.2022
@@ -30,11 +30,9 @@ section.article
                     li Номинация «Столица»
                     li Номинация «Малый бизнес»
                     li Номинация «Северная столица»
-                .article-share
-                    |Поделиться:
             .article-aside
                 .article-aside__title Актуальные новости
-                a.article-aside__block
+                a.article-aside__block(href="/article.html")
                     span.article-aside__date 01.10.2022
                     span.article-aside__name Какой английский нужен в ИТ-компаниях?
                     span.article-aside__img
@@ -43,7 +41,7 @@ section.article
                     span.article-aside__link
                         span
                         img(src="../img/pages/article-link.svg", alt="")
-                a.article-aside__block
+                a.article-aside__block(href="/article.html")
                     span.article-aside__date 01.10.2022
                     span.article-aside__name Какой английский нужен в ИТ-компаниях?
                     span.article-aside__img
@@ -52,7 +50,7 @@ section.article
                     span.article-aside__link
                         span
                         img(src="../img/pages/article-link.svg", alt="")
-                a.article-aside__block
+                a.article-aside__block(href="/article.html")
                     span.article-aside__date 01.10.2022
                     span.article-aside__name Какой английский нужен в ИТ-компаниях?
                     span.article-aside__img
@@ -61,11 +59,16 @@ section.article
                     span.article-aside__link
                         span
                         img(src="../img/pages/article-link.svg", alt="")
+        .article-share
+            span Поделиться:
+            script(src='https://yastatic.net/share2/share.js')
+            .ya-share2(data-curtain='' data-shape='round' data-color-scheme='whiteblack' data-services='messenger,vkontakte,odnoklassniki,telegram,twitter,whatsapp')
         .article__nav
             a.article__prev(href="")
                 span Предыдущая новость
                 .article__arrow
                     img(src="../img/pages/article-prev.svg", alt="")
+            span
             a.article__next(href="")
                 span Следующая новость
                 .article__arrow

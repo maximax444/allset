@@ -1,0 +1,244 @@
+.overlay
+    background: rgba(0, 0, 0, 0.9)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 15
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    padding: 200px 0
+    overflow-y: scroll
+    display: none
+    &.active
+        display: flex
+.nicescroll-rails .nicescroll-cursors
+    background-color: #D9D9D9 !important
+#slider-range
+    margin-bottom: 20px
+    height: 1px
+    background-color: #000000
+    border: 0
+    .ui-widget-header
+        background-color: #000000
+    .ui-state-default
+        background: #357D3D
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        border: 0
+        margin-top: -1px
+        cursor: pointer
+        &:focus
+            outline: none
+.filters
+    padding: 72px 110px
+    background: #FFFFFF
+    border: 1px solid #FFFFFF
+    border-radius: 12px
+    width: 1000px
+    max-width: 95vw
+    position: relative
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 57px
+        .main__form
+            width: 340px
+            margin-bottom: 0
+            input
+                font-family: 'Gilroy'
+                border: 1px solid #4E4E4E
+        &>.filters__reset
+            font-family: 'Gilroy'
+            width: 142px
+            height: 58px
+            border: 1px solid #357D3D
+            border-radius: 143px
+            font-size: 16px
+            line-height: 158.7%
+            color: #357D3D
+            background-color: #fff
+            cursor: pointer
+            @include trs
+            &:hover
+                color: #fff
+                background-color: #357D3D
+        &>.filters__search
+            font-family: 'Gilroy'
+            width: 226px
+            height: 58px
+            border: 1px solid #357D3D
+            border-radius: 143px
+            font-size: 16px
+            line-height: 158.7%
+            color: #fff
+            background-color: #357D3D
+            cursor: pointer
+            margin-left: 40px
+            margin-right: 5px
+            @include trs
+            &:hover
+                color: #357D3D
+                background-color: #fff
+    &__price
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 20px
+        font-size: 16px
+        line-height: 158.7%
+    &__close
+        position: absolute
+        left: 50%
+        width: 25px
+        height: 25px
+        justify-content: center
+        align-items: center
+        display: flex
+        margin-left: -12px
+        top: -95px
+        cursor: pointer
+    &__wrap
+        display: flex
+        justify-content: space-between
+        position: relative
+        &::before
+            content: ""
+            display: block
+            height: 1px
+            width: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background-color: #fff
+    &__cities
+        padding-bottom: 12px
+        border-bottom: 1px solid #000000
+        font-size: 16px
+        line-height: 158.7%
+        margin-bottom: 8px
+        &-wrap
+            padding-top: 4px
+            padding-bottom: 4px
+            overflow-y: scroll
+            height: 150px
+    &__col
+        width: 300px
+    &__block
+        width: 100%
+        border-top: 1px dashed #D9D9D9
+        padding-top: 25px
+        padding-bottom: 18px
+        .checkbox
+            display: flex
+            align-items: center
+            position: relative
+            margin-bottom: 12px
+            cursor: pointer
+            span
+                width: 22px
+                height: 22px
+                border: 1px solid #357D3D
+                border-radius: 4px
+                margin-right: 16px
+                position: relative
+            p
+                font-size: 16px
+                line-height: 158.7%
+                color: #000000
+                max-width: calc(100% - 38px)
+            input
+                position: absolute
+                top: 0
+                left: 0
+                opacity: 0
+                overflow: hidden
+                margin: 0
+                padding: 0
+                visibility: hidden
+                &:checked + span
+                    &::after
+                        content: ""
+                        display: block
+                        width: 12px
+                        height: 12px
+                        background: #357D3D
+                        border-radius: 2px
+                        left: 4px
+                        top: 4px
+                        position: absolute
+        .radio
+            display: flex
+            align-items: center
+            position: relative
+            margin-bottom: 12px
+            cursor: pointer
+            span
+                width: 22px
+                height: 22px
+                border: 1px solid #357D3D
+                border-radius: 30px
+                margin-right: 16px
+                position: relative
+            p
+                font-size: 16px
+                line-height: 158.7%
+                color: #000000
+                max-width: calc(100% - 38px)
+            input
+                position: absolute
+                top: 0
+                left: 0
+                opacity: 0
+                overflow: hidden
+                margin: 0
+                padding: 0
+                visibility: hidden
+                &:checked + span
+                    &::after
+                        content: ""
+                        display: block
+                        width: 12px
+                        height: 12px
+                        background: #357D3D
+                        border-radius: 50%
+                        left: 4px
+                        top: 4px
+                        position: absolute
+    &__title
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 20px
+@media(max-width: 991px)
+    .filters
+        &__wrap
+            display: block
+        &__top
+            flex-direction: column
+            grid-gap: 25px
+            .main__form
+                width: 100%
+            &>.filters__search
+                margin: 0
+        &__col
+            width: 100%
+@media(max-width: 575px)
+    .overlay
+        padding: 0
+    .filters
+        max-width: 100vw
+        padding: 100px 20px
+        border-radius: 0
+        &__close
+            top: 35px
+            path
+                stroke: #000
+        .main__form
+            margin-bottom: 30px
+        &__top
+            grid-gap: 16px

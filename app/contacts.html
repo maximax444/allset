@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>AllSet</title>
   </head>
   <!-- Head-->
@@ -49,271 +50,532 @@
           </div>
         </div>
       </header>
-      <section class="contacts">
-        <div class="container">
-          <h1 class="contacts__title">Контакты</h1>
-          <div class="contacts__wrap">
-            <div class="contacts__block">
-              <div class="contacts__subtitle">Соискателям</div>
-              <p class="contacts__descr">Поможем с возникшими вопросами или сложностями при работе с сайтом</p>
-              <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">career@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
+      <div class="content">
+        <section class="contacts">
+          <div class="container">
+            <h1 class="contacts__title">Контакты</h1>
+            <div class="contacts__wrap">
+              <div class="contacts__block">
+                <div class="contacts__subtitle">Соискателям</div>
+                <p class="contacts__descr">Поможем с возникшими вопросами или сложностями при работе с сайтом</p>
+                <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">career@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
+              </div>
+              <div class="contacts__block">
+                <div class="contacts__subtitle">Работодателям</div>
+                <p class="contacts__descr">Мы поможем подобрать наиболее эффективный тариф для решения ваших задач в подборе персонала</p>
+                <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">job@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
+              </div>
+              <div class="contacts__block">
+                <div class="contacts__subtitle">PR и маркетинг</div>
+                <p class="contacts__descr">Пресс-служба, партнерские проекты,<br>мероприятия</p>
+                <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">pr@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
+              </div>
+              <div class="contacts__block">
+                <div class="contacts__subtitle">Тех. поддержка</div>
+                <p class="contacts__descr">Поможем с вопросами по работе площадки, авторскому праву, а также с другими сложностями</p>
+                <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">support@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
+              </div>
             </div>
-            <div class="contacts__block">
-              <div class="contacts__subtitle">Работодателям</div>
-              <p class="contacts__descr">Мы поможем подобрать наиболее эффективный тариф для решения ваших задач в подборе персонала</p>
-              <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">job@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
-            </div>
-            <div class="contacts__block">
-              <div class="contacts__subtitle">PR и маркетинг</div>
-              <p class="contacts__descr">Пресс-служба, партнерские проекты,<br>мероприятия</p>
-              <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">pr@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
-            </div>
-            <div class="contacts__block">
-              <div class="contacts__subtitle">Тех. поддержка</div>
-              <p class="contacts__descr">Поможем с вопросами по работе площадки, авторскому праву, а также с другими сложностями</p>
-              <div class="contacts__bottom"><a class="contacts__email" href="#"><img src="../img/pages/email.svg" alt="">support@allset.ru</a><a class="contacts__phone" href="#"><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</a></div>
-            </div>
-          </div>
-          <div class="contacts-dop">
-            <h2 class="contacts-dop__title">Реквизиты компании</h2>
-            <div class="contacts-dop__wrap">
-              <div class="contacts-dop__col">
-                <div class="contacts-dop__subtitle">Полное наименование юридического лица:</div>
-                <div class="contacts-dop__text">Общество с ограниченной ответственностью «АЛЛСЕТ»</div>
-                <div class="contacts-dop__list">
-                  <div class="contacts-dop__el"><span>ИНН:</span>7705698870</div>
-                  <div class="contacts-dop__el"><span>КПП:</span>770124001</div>
-                  <div class="contacts-dop__el"><span>ОГРН:</span>5147756824134</div>
+            <div class="contacts-dop">
+              <h2 class="contacts-dop__title">Реквизиты компании</h2>
+              <div class="contacts-dop__wrap">
+                <div class="contacts-dop__col">
+                  <div class="contacts-dop__subtitle">Полное наименование юридического лица:</div>
+                  <div class="contacts-dop__text">Общество с ограниченной ответственностью «АЛЛСЕТ»</div>
+                  <div class="contacts-dop__list">
+                    <div class="contacts-dop__el"><span>ИНН:</span>7705698870</div>
+                    <div class="contacts-dop__el"><span>КПП:</span>770124001</div>
+                    <div class="contacts-dop__el"><span>ОГРН:</span>5147756824134</div>
+                  </div>
+                </div>
+                <div class="contacts-dop__col">
+                  <div class="contacts-dop__subtitle">Адрес юридического лица:</div>
+                  <div class="contacts-dop__text">Санкт-Петербург, Малая разночинная 9, офис 508</div>
+                  <div class="contacts-dop__subway"><img src="../img/pages/m.svg" alt="">Чкаловская</div>
                 </div>
               </div>
-              <div class="contacts-dop__col">
-                <div class="contacts-dop__subtitle">Адрес юридического лица:</div>
-                <div class="contacts-dop__text">Санкт-Петербург, Малая разночинная 9, офис 508</div>
-                <div class="contacts-dop__subway"><img src="../img/pages/m.svg" alt="">Чкаловская</div>
+              <div class="contacts__map" id="map"></div>
+            </div>
+          </div>
+        </section>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3_b3EhD0YXwMp0q8DObsfavvJTbJ4M7I&amp;callback=initMap&amp;v=weekly"></script>
+        <script>
+          google.maps.event.addDomListener(window, 'load', init);
+          
+          function init() {
+              // Basic options for a simple Google Map
+              // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+              var mapOptions = {
+                  // How zoomed in you want the map to start at (always required)
+                  zoom: 14,
+          zoomControl: false,
+          // scaleControl: false,
+          streetViewControl: false,
+          mapTypeControl: false,
+          fullscreenControl: false,
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(59.958458, 30.291317), // New York
+          
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [
+              {
+                  "featureType": "water",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "color": "#e9e9e9"
+                      },
+                      {
+                          "lightness": 17
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "color": "#f5f5f5"
+                      },
+                      {
+                          "lightness": 20
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.highway",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      },
+                      {
+                          "lightness": 17
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.highway",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      },
+                      {
+                          "lightness": 29
+                      },
+                      {
+                          "weight": 0.2
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.arterial",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      },
+                      {
+                          "lightness": 18
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.local",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      },
+                      {
+                          "lightness": 16
+                      }
+                  ]
+              },
+              {
+                  "featureType": "poi",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "color": "#f5f5f5"
+                      },
+                      {
+                          "lightness": 21
+                      }
+                  ]
+              },
+              {
+                  "featureType": "poi.park",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "color": "#dedede"
+                      },
+                      {
+                          "lightness": 21
+                      }
+                  ]
+              },
+              {
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                      {
+                          "visibility": "on"
+                      },
+                      {
+                          "color": "#ffffff"
+                      },
+                      {
+                          "lightness": 16
+                      }
+                  ]
+              },
+              {
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                      {
+                          "saturation": 36
+                      },
+                      {
+                          "color": "#333333"
+                      },
+                      {
+                          "lightness": 40
+                      }
+                  ]
+              },
+              {
+                  "elementType": "labels.icon",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "transit",
+                  "elementType": "geometry",
+                  "stylers": [
+                      {
+                          "color": "#f2f2f2"
+                      },
+                      {
+                          "lightness": 19
+                      }
+                  ]
+              },
+              {
+                  "featureType": "administrative",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#fefefe"
+                      },
+                      {
+                          "lightness": 20
+                      }
+                  ]
+              },
+              {
+                  "featureType": "administrative",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                      {
+                          "color": "#fefefe"
+                      },
+                      {
+                          "lightness": 17
+                      },
+                      {
+                          "weight": 1.2
+                      }
+                  ]
+              }
+          ]
+          };
+          
+          // Get the HTML DOM element that will contain your map
+          // We are using a div with id="map" seen below in the <body>
+          var mapElement = document.getElementById('map');
+          
+          // Create the Google Map using our element and options defined above
+          var map = new google.maps.Map(mapElement, mapOptions);
+          
+          // Let's also add a marker while we're at it
+          var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(59.958458, 30.291317),
+              map: map,
+              title: 'Mikado',
+          icon: {
+          url: "/img/pages/map.svg",
+          scaledSize: new google.maps.Size(61, 61)
+          }
+          });
+          
+          }
+        </script>
+      </div>
+      <div class="overlay overlay-filters"> 
+        <div class="filters"> 
+          <div class="filters__close"> 
+            <svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L26.9999 26.9999" stroke="white" stroke-width="3"></path>
+              <path d="M27 2L2.00015 26.9999" stroke="white" stroke-width="3"></path>
+            </svg>
+          </div>
+          <div class="filters__top">
+            <form class="main__form">
+              <input placeholder="Найти работу" required>
+              <button class="filters__search"><img src="../img/main/search.svg" alt=""></button>
+            </form>
+            <button class="filters__search">Применить и искать</button>
+            <button class="filters__reset">Сбросить</button>
+          </div>
+          <form class="filters__wrap"> 
+            <input class="searchText" type="hidden" name="searchText">
+            <div class="filters__col"> 
+              <div class="filters__block"> 
+                <div class="filters__title">Заработная плата</div>
+                <div class="filters__cont">
+                  <div class="filters__price"> <span class="first"><span>70 000 </span>₽ </span><span class="last"><span>190 000 </span>₽ </span></div>
+                  <div id="slider-range"></div>
+                  <label class="radio">
+                    <input type="checkbox" name="fs" checked><span> </span>
+                    <p>Не имеет значения</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Страна</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>ОАЭ</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Россия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Киргизия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Казахстан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Беларусь</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Азербайджан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Армения</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Грузия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Узбекистан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Таджикистан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Турция</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Город</div>
+                <div class="filters__cont">
+                  <div class="filters__cities">Санкт-Петербург</div>
+                  <div class="filters__cities-wrap">
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs" checked><span> </span>
+                      <p>Санкт-Петербург</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Самара</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Требуемый опыт работы</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>От 1 года до 3 лет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>От 3 до 6 лет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>Нет опыта</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>Более 6 лет</p>
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="contacts__map" id="map"></div>
-          </div>
+            <div class="filters__col">
+              <div class="filters__block"> 
+                <div class="filters__title">Тип занятости</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Постоянная</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Совмещенная</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Вахта</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">График работы</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Полный день</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Удаленная работа</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Сменный график</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Гибкий график</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Формат работы</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>На территории работодателя</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>Удаленно</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>Гибрид</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Релокация</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Есть</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Нет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Не имеет значения</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Образование</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Среднее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Высшее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Неоконченное высшее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Среднее специальное</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>КН</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>ДН</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>МВА</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-      </section>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3_b3EhD0YXwMp0q8DObsfavvJTbJ4M7I&amp;callback=initMap&amp;v=weekly"></script>
-      <script>
-        google.maps.event.addDomListener(window, 'load', init);
-        
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 14,
-        zoomControl: false,
-        // scaleControl: false,
-        streetViewControl: false,
-        mapTypeControl: false,
-        fullscreenControl: false,
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(59.958458, 30.291317), // New York
-        
-        // How you would like to style the map.
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [
-            {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#e9e9e9"
-                    },
-                    {
-                        "lightness": 17
-                    }
-                ]
-            },
-            {
-                "featureType": "landscape",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#f5f5f5"
-                    },
-                    {
-                        "lightness": 20
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "geometry.fill",
-                "stylers": [
-                    {
-                        "color": "#ffffff"
-                    },
-                    {
-                        "lightness": 17
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#ffffff"
-                    },
-                    {
-                        "lightness": 29
-                    },
-                    {
-                        "weight": 0.2
-                    }
-                ]
-            },
-            {
-                "featureType": "road.arterial",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#ffffff"
-                    },
-                    {
-                        "lightness": 18
-                    }
-                ]
-            },
-            {
-                "featureType": "road.local",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#ffffff"
-                    },
-                    {
-                        "lightness": 16
-                    }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#f5f5f5"
-                    },
-                    {
-                        "lightness": 21
-                    }
-                ]
-            },
-            {
-                "featureType": "poi.park",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#dedede"
-                    },
-                    {
-                        "lightness": 21
-                    }
-                ]
-            },
-            {
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                    {
-                        "visibility": "on"
-                    },
-                    {
-                        "color": "#ffffff"
-                    },
-                    {
-                        "lightness": 16
-                    }
-                ]
-            },
-            {
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "saturation": 36
-                    },
-                    {
-                        "color": "#333333"
-                    },
-                    {
-                        "lightness": 40
-                    }
-                ]
-            },
-            {
-                "elementType": "labels.icon",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#f2f2f2"
-                    },
-                    {
-                        "lightness": 19
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative",
-                "elementType": "geometry.fill",
-                "stylers": [
-                    {
-                        "color": "#fefefe"
-                    },
-                    {
-                        "lightness": 20
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#fefefe"
-                    },
-                    {
-                        "lightness": 17
-                    },
-                    {
-                        "weight": 1.2
-                    }
-                ]
-            }
-        ]
-        };
-        
-        // Get the HTML DOM element that will contain your map
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
-        
-        // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
-        
-        // Let's also add a marker while we're at it
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(59.958458, 30.291317),
-            map: map,
-            title: 'Mikado',
-        icon: {
-        url: "/img/pages/map.svg",
-        scaledSize: new google.maps.Size(61, 61)
-        }
-        });
-        
-        }
-      </script>
+      </div>
       <footer class="footer">
         <div class="container"> 
           <div class="footer__wrap"> 
@@ -322,11 +584,13 @@
             </div>
             <div class="footer__soc"><a href="#"><img src="../img/main/vk.svg" alt=""></a><a href="#"><img src="../img/main/telegram.svg" alt=""></a><a href="#"><img src="../img/main/wa.svg" alt=""></a></div>
             <div class="footer__right">
-              <div class="footer__title"><span>Подпишитесь на рассылку</span>и получайте самые актуальные новости от Allset!</div>
-              <form class="footer__form">
-                <input placeholder="E-mail" required>
-                <button><img src="../img/main/footer-form.svg" alt=""></button>
-              </form>
+              <!--.footer__title-->
+              <!--    span Подпишитесь на рассылку-->
+              <!--    | и получайте самые актуальные новости от Allset!-->
+              <!--form.footer__form-->
+              <!--    input(placeholder="E-mail" required)-->
+              <!--    button-->
+              <!--        img(src="../img/main/footer-form.svg", alt="")-->
             </div>
           </div>
           <div class="footer__bottom"><a class="footer__rules" href="/policy.html">Правила использования платформы</a><a class="footer__polit" href="/policy.html">Политика конфиденциальности</a><a class="footer__dev" href="#">Разработка сайта<img src="../img/main/hero-logo.svg" alt=""></a></div>
@@ -335,7 +599,9 @@
     </div>
     <!-- Script-->
     <script src="js/main.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nicescroll@3.7.4/jquery.nicescroll.js"> </script>
     <script src="js/custom.js"></script>
     <!-- Script-->
   </body>

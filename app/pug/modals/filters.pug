@@ -1,0 +1,238 @@
+.overlay.overlay-filters 
+    .filters 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .filters__top
+            form.main__form
+                input(placeholder="Найти работу" required)
+                button.filters__search
+                    img(src="../img/main/search.svg", alt="")
+            button.filters__search Применить и искать
+            button.filters__reset Сбросить
+        form.filters__wrap 
+            input(type="hidden" name="searchText" class="searchText")
+            .filters__col 
+                .filters__block 
+                    .filters__title Заработная плата
+                    .filters__cont
+                        .filters__price 
+                            span.first
+                                span 70 000 
+                                | ₽ 
+                            span.last
+                                span 190 000 
+                                | ₽ 
+                        #slider-range
+                        label.radio
+                            input(type="checkbox" name="fs" checked)
+                            span 
+                            p Не имеет значения
+                .filters__block 
+                    .filters__title Страна
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p ОАЭ
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Россия
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Киргизия
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Казахстан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Беларусь
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Азербайджан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Армения
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Грузия
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Узбекистан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Таджикистан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Турция
+                .filters__block 
+                    .filters__title Город
+                    .filters__cont
+                        .filters__cities Санкт-Петербург
+                        .filters__cities-wrap
+                            label.checkbox
+                                input(type="checkbox" name="fs" checked)
+                                span 
+                                p Санкт-Петербург
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Самара
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                .filters__block 
+                    .filters__title Требуемый опыт работы
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p От 1 года до 3 лет
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p От 3 до 6 лет
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p Нет опыта
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p Более 6 лет
+            .filters__col
+                .filters__block 
+                    .filters__title Тип занятости
+                    .filters__cont
+                        label.checkbox
+                            input(type="checkbox" name="f3")
+                            span 
+                            p Постоянная
+                        label.checkbox
+                            input(type="checkbox" name="f3")
+                            span 
+                            p Совмещенная
+                        label.checkbox
+                            input(type="checkbox" name="f3")
+                            span 
+                            p Вахта
+                .filters__block 
+                    .filters__title График работы
+                    .filters__cont
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Полный день
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Удаленная работа
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Сменный график
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Гибкий график
+                .filters__block 
+                    .filters__title Формат работы
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f5")
+                            span 
+                            p На территории работодателя
+                        label.radio
+                            input(type="radio" name="f5")
+                            span 
+                            p Удаленно
+                        label.radio
+                            input(type="radio" name="f5")
+                            span 
+                            p Гибрид
+                .filters__block 
+                    .filters__title Релокация
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f2")
+                            span 
+                            p Есть
+                        label.radio
+                            input(type="radio" name="f2")
+                            span 
+                            p Нет
+                        label.radio
+                            input(type="radio" name="f2")
+                            span 
+                            p Не имеет значения
+                .filters__block 
+                    .filters__title Образование
+                    .filters__cont
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Среднее
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Высшее
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Неоконченное высшее
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Среднее специальное
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p КН
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p ДН
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p МВА

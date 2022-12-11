@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>AllSet</title>
   </head>
   <!-- Head-->
@@ -49,191 +50,452 @@
           </div>
         </div>
       </header>
-      <section class="price">
-        <div class="container">
-          <h1 class="price__title">Тарифы</h1>
-          <div class="price__tabs">
-            <button class="active">Пакеты</button>
-            <button>Услуги</button>
-          </div>
-          <div class="price__cont">
-            <div class="price__cont-block active">
-              <div class="table1">
-                <table>
-                  <tr>
-                    <td></td>
-                    <td>Бесплатный пакет</td>
-                    <td>Стандартный пакет</td>
-                    <td>Премиум пакет</td>
-                  </tr>
-                  <tr>
-                    <td>Количество вакансий, включенных в пакет</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>15</td>
-                  </tr>
-                  <tr>
-                    <td>Лимит вакансий внутри пакета</td>
-                    <td>1</td>
-                    <td>10</td>
-                    <td>85</td>
-                  </tr>
-                  <tr>
-                    <td>Доступ к базе резюме</td>
-                    <td>бесплатно</td>
-                    <td>бесплатно</td>
-                    <td>бесплатно</td>
-                  </tr>
-                  <tr>
-                    <td>Бесплатные консультации юриста</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>15</td>
-                  </tr>
-                  <tr>
-                    <td>Горящая вакансия (ТОП-3 в поиске)*</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>Оформление страницы компании**</td>
-                    <td>0</td>
-                    <td>3 месяца</td>
-                    <td>год</td>
-                  </tr>
-                  <tr>
-                    <td>Дизайн-оформление вакансии (баннером)</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>Размещение логотипа компании в ленте на главной странице сайта</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>месяц</td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость</td>
-                    <td>0</td>
-                    <td>4 900</td>
-                    <td>29 900</td>
-                  </tr>
-                  <tr>
-                    <td>Период активности</td>
-                    <td>месяц</td>
-                    <td>квартал</td>
-                    <td>год</td>
-                  </tr>
-                </table>
+      <div class="content">
+        <section class="price">
+          <div class="container">
+            <h1 class="price__title">Тарифы</h1>
+            <div class="price__tabs">
+              <button class="active">Пакеты</button>
+              <button>Услуги</button>
+            </div>
+            <div class="price__cont">
+              <div class="price__cont-block active">
+                <div class="table1">
+                  <table>
+                    <tr>
+                      <td></td>
+                      <td>Бесплатный пакет</td>
+                      <td>Стандартный пакет</td>
+                      <td>Премиум пакет</td>
+                    </tr>
+                    <tr>
+                      <td>Количество вакансий, включенных в пакет</td>
+                      <td>1</td>
+                      <td>5</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>Лимит вакансий внутри пакета</td>
+                      <td>1</td>
+                      <td>10</td>
+                      <td>85</td>
+                    </tr>
+                    <tr>
+                      <td>Доступ к базе резюме</td>
+                      <td>бесплатно</td>
+                      <td>бесплатно</td>
+                      <td>бесплатно</td>
+                    </tr>
+                    <tr>
+                      <td>Бесплатные консультации юриста</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>Горящая вакансия (ТОП-3 в поиске)*</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Оформление страницы компании**</td>
+                      <td>0</td>
+                      <td>3 месяца</td>
+                      <td>год</td>
+                    </tr>
+                    <tr>
+                      <td>Дизайн-оформление вакансии (баннером)</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Размещение логотипа компании в ленте на главной странице сайта</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>месяц</td>
+                    </tr>
+                    <tr>
+                      <td>Стоимость</td>
+                      <td>0</td>
+                      <td>4 900</td>
+                      <td>29 900</td>
+                    </tr>
+                    <tr>
+                      <td>Период активности</td>
+                      <td>месяц</td>
+                      <td>квартал</td>
+                      <td>год</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="price__cont-block">
+                <div class="table2">
+                  <table>
+                    <tr>
+                      <td></td>
+                      <td>Цена</td>
+                      <td>Период</td>
+                    </tr>
+                    <tr class="title">
+                      <td>Размещение вакансии</td>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>400</td>
+                      <td>1 месяц</td>
+                    </tr>
+                    <tr>
+                      <td>от 5</td>
+                      <td>360</td>
+                      <td>1 месяц</td>
+                    </tr>
+                    <tr>
+                      <td>от 10</td>
+                      <td>325</td>
+                      <td>1 месяц</td>
+                    </tr>
+                    <tr>
+                      <td>от 50</td>
+                      <td>290</td>
+                      <td>1 месяц</td>
+                    </tr>
+                    <tr>
+                      <td>от 100</td>
+                      <td>250</td>
+                      <td>1 месяц</td>
+                    </tr>
+                    <tr class="title">
+                      <td>Горящая вакансия</td>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td>Вакансия отображается вверху страницы поиска при применении фильтров (при применении фильтров выбор региона и специализации)</td>
+                      <td>3 000</td>
+                      <td>10 дней</td>
+                    </tr>
+                    <tr class="title">
+                      <td>Брендинг</td>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td>Размещение баннера на страницы компании</td>
+                      <td>25 000</td>
+                      <td>1 год</td>
+                    </tr>
+                    <tr>
+                      <td>Брендирование вакансии (1 шаблон)</td>
+                      <td>15 000</td>
+                      <td>1 год</td>
+                    </tr>
+                    <tr class="title">
+                      <td>Промо</td>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td>Размещение логотипа компании в ленте на главной странице сайта</td>
+                      <td>5 000</td>
+                      <td>10 дней</td>
+                    </tr>
+                    <tr>
+                      <td>Брендирование главной страницы сайта вашим баннером</td>
+                      <td>15 000</td>
+                      <td>10 дней</td>
+                    </tr>
+                    <tr>
+                      <td>Размещение баннера на странице поиска</td>
+                      <td>10 000</td>
+                      <td>10 дней</td>
+                    </tr>
+                    <tr>
+                      <td>Брендирование страницы вакансии</td>
+                      <td>5 000</td>
+                      <td>10 дней</td>
+                    </tr>
+                    <tr>
+                      <td>Личный кабинет</td>
+                      <td>7 000</td>
+                      <td>10 дней</td>
+                    </tr>
+                    <tr>
+                      <td>Размещение вашей вакансии на главной странице сайта</td>
+                      <td>7 000</td>
+                      <td>10 дней</td>
+                    </tr>
+                    <tr>
+                      <td>Доступ к базе</td>
+                      <td>Бесплатно</td>
+                      <td></td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
-            <div class="price__cont-block">
-              <div class="table2">
-                <table>
-                  <tr>
-                    <td></td>
-                    <td>Цена</td>
-                    <td>Период</td>
-                  </tr>
-                  <tr class="title">
-                    <td>Размещение вакансии</td>
-                    <td colspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>400</td>
-                    <td>1 месяц</td>
-                  </tr>
-                  <tr>
-                    <td>от 5</td>
-                    <td>360</td>
-                    <td>1 месяц</td>
-                  </tr>
-                  <tr>
-                    <td>от 10</td>
-                    <td>325</td>
-                    <td>1 месяц</td>
-                  </tr>
-                  <tr>
-                    <td>от 50</td>
-                    <td>290</td>
-                    <td>1 месяц</td>
-                  </tr>
-                  <tr>
-                    <td>от 100</td>
-                    <td>250</td>
-                    <td>1 месяц</td>
-                  </tr>
-                  <tr class="title">
-                    <td>Горящая вакансия</td>
-                    <td colspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td>Вакансия отображается вверху страницы поиска при применении фильтров (при применении фильтров выбор региона и специализации)</td>
-                    <td>3 000</td>
-                    <td>10 дней</td>
-                  </tr>
-                  <tr class="title">
-                    <td>Брендинг</td>
-                    <td colspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td>Размещение баннера на страницы компании</td>
-                    <td>25 000</td>
-                    <td>1 год</td>
-                  </tr>
-                  <tr>
-                    <td>Брендирование вакансии (1 шаблон)</td>
-                    <td>15 000</td>
-                    <td>1 год</td>
-                  </tr>
-                  <tr class="title">
-                    <td>Промо</td>
-                    <td colspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td>Размещение логотипа компании в ленте на главной странице сайта</td>
-                    <td>5 000</td>
-                    <td>10 дней</td>
-                  </tr>
-                  <tr>
-                    <td>Брендирование главной страницы сайта вашим баннером</td>
-                    <td>15 000</td>
-                    <td>10 дней</td>
-                  </tr>
-                  <tr>
-                    <td>Размещение баннера на странице поиска</td>
-                    <td>10 000</td>
-                    <td>10 дней</td>
-                  </tr>
-                  <tr>
-                    <td>Брендирование страницы вакансии</td>
-                    <td>5 000</td>
-                    <td>10 дней</td>
-                  </tr>
-                  <tr>
-                    <td>Личный кабинет</td>
-                    <td>7 000</td>
-                    <td>10 дней</td>
-                  </tr>
-                  <tr>
-                    <td>Размещение вашей вакансии на главной странице сайта</td>
-                    <td>7 000</td>
-                    <td>10 дней</td>
-                  </tr>
-                  <tr>
-                    <td>Доступ к базе</td>
-                    <td>Бесплатно</td>
-                    <td></td>
-                  </tr>
-                </table>
+          </div>
+        </section>
+      </div>
+      <div class="overlay overlay-filters"> 
+        <div class="filters"> 
+          <div class="filters__close"> 
+            <svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L26.9999 26.9999" stroke="white" stroke-width="3"></path>
+              <path d="M27 2L2.00015 26.9999" stroke="white" stroke-width="3"></path>
+            </svg>
+          </div>
+          <div class="filters__top">
+            <form class="main__form">
+              <input placeholder="Найти работу" required>
+              <button class="filters__search"><img src="../img/main/search.svg" alt=""></button>
+            </form>
+            <button class="filters__search">Применить и искать</button>
+            <button class="filters__reset">Сбросить</button>
+          </div>
+          <form class="filters__wrap"> 
+            <input class="searchText" type="hidden" name="searchText">
+            <div class="filters__col"> 
+              <div class="filters__block"> 
+                <div class="filters__title">Заработная плата</div>
+                <div class="filters__cont">
+                  <div class="filters__price"> <span class="first"><span>70 000 </span>₽ </span><span class="last"><span>190 000 </span>₽ </span></div>
+                  <div id="slider-range"></div>
+                  <label class="radio">
+                    <input type="checkbox" name="fs" checked><span> </span>
+                    <p>Не имеет значения</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Страна</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>ОАЭ</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Россия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Киргизия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Казахстан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Беларусь</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Азербайджан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Армения</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Грузия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Узбекистан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Таджикистан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Турция</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Город</div>
+                <div class="filters__cont">
+                  <div class="filters__cities">Санкт-Петербург</div>
+                  <div class="filters__cities-wrap">
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs" checked><span> </span>
+                      <p>Санкт-Петербург</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Самара</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Требуемый опыт работы</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>От 1 года до 3 лет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>От 3 до 6 лет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>Нет опыта</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>Более 6 лет</p>
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="filters__col">
+              <div class="filters__block"> 
+                <div class="filters__title">Тип занятости</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Постоянная</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Совмещенная</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Вахта</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">График работы</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Полный день</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Удаленная работа</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Сменный график</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Гибкий график</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Формат работы</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>На территории работодателя</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>Удаленно</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>Гибрид</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Релокация</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Есть</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Нет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Не имеет значения</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Образование</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Среднее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Высшее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Неоконченное высшее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Среднее специальное</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>КН</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>ДН</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>МВА</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-      </section>
+      </div>
       <footer class="footer">
         <div class="container"> 
           <div class="footer__wrap"> 
@@ -242,11 +504,13 @@
             </div>
             <div class="footer__soc"><a href="#"><img src="../img/main/vk.svg" alt=""></a><a href="#"><img src="../img/main/telegram.svg" alt=""></a><a href="#"><img src="../img/main/wa.svg" alt=""></a></div>
             <div class="footer__right">
-              <div class="footer__title"><span>Подпишитесь на рассылку</span>и получайте самые актуальные новости от Allset!</div>
-              <form class="footer__form">
-                <input placeholder="E-mail" required>
-                <button><img src="../img/main/footer-form.svg" alt=""></button>
-              </form>
+              <!--.footer__title-->
+              <!--    span Подпишитесь на рассылку-->
+              <!--    | и получайте самые актуальные новости от Allset!-->
+              <!--form.footer__form-->
+              <!--    input(placeholder="E-mail" required)-->
+              <!--    button-->
+              <!--        img(src="../img/main/footer-form.svg", alt="")-->
             </div>
           </div>
           <div class="footer__bottom"><a class="footer__rules" href="/policy.html">Правила использования платформы</a><a class="footer__polit" href="/policy.html">Политика конфиденциальности</a><a class="footer__dev" href="#">Разработка сайта<img src="../img/main/hero-logo.svg" alt=""></a></div>
@@ -255,7 +519,9 @@
     </div>
     <!-- Script-->
     <script src="js/main.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nicescroll@3.7.4/jquery.nicescroll.js"> </script>
     <script src="js/custom.js"></script>
     <!-- Script-->
   </body>
