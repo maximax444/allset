@@ -1,0 +1,32 @@
+.employers
+    padding-top: 75px
+    padding-bottom: 100px
+    &__title
+        font-weight: 500
+        font-size: 55px
+        line-height: 54px
+        margin-bottom: 55px
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 49px 47px
+@media(max-width: 1199px)
+    .employers
+        &__wrap
+            grid-gap: 45px 25px
+@media(max-width: 991px)
+    .employers
+        &__wrap
+            grid-template-columns: repeat(2, 1fr)
+@media(max-width: 767px)
+    .employers
+        padding-top: 50px
+        padding-bottom: 64px
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+            grid-gap: 40px
+@media(max-width: 575px)
+    .employers
+        &__title
+            font-size: 40px
+            line-height: 98.7%
