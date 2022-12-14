@@ -23,9 +23,122 @@
 	&--black
 		border: 1px solid #000
 		color: #000
-		padding: 17px 30px
 @media(max-width: 369px)
 	.btn
+		padding: 17px 30px
+.menu
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	background-color: #fff
+	z-index: 15
+	padding-bottom: 50px
+	overflow-y: scroll
+	display: none
+	&.active
+		display: block
+	&-top
+		border-bottom: 1px solid #000
+		&__wrap
+			height: 64px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.header
+				&__lang, &__country
+					&-top
+						color: #000
+		&__close
+			display: flex
+			cursor: pointer
+		&__phone
+			display: flex
+			align-items: center
+			grid-gap: 13px
+			font-weight: 500
+			font-size: 16px
+			line-height: 19px
+			color: #000000
+			text-decoration: none
+		&__login
+			display: flex
+			align-items: center
+			grid-gap: 12px
+			font-weight: 500
+			font-size: 16px
+			line-height: 19px
+			color: #000000
+			text-decoration: none
+			&:hover
+				grid-gap: 7px
+	&__menu
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 63px 0
+		border-bottom: 1px solid #357D3D
+		a
+			font-weight: 400
+			font-size: 25px
+			line-height: 98.7%
+			color: #000000
+			text-decoration: none
+			&:hover
+				color: #357D3D
+	&__bot
+		padding-top: 44px
+		display: flex
+		justify-content: space-between
+	&__col
+		width: 48%
+	&__title
+		font-weight: 500
+		font-size: 40px
+		line-height: 98.7%
+		color: #000000
+		margin-bottom: 40px
+	&__cont
+		padding: 0
+		margin: 0
+		list-style-type: none
+		&>li
+			&>a
+				display: block
+				position: relative
+				padding-left: 15px
+				font-weight: 500
+				font-size: 20px
+				line-height: 210.2%
+				color: #000000
+				text-decoration: none
+				&:hover
+					color: #357D3D
+				&::before
+					content: ""
+					display: block
+					position: absolute
+					left: 0
+					top: 13px
+					width: 2px
+					height: 16px
+					background-color: #357D3D
+			&.lk
+				padding-top: 59px
+			&>ul
+				padding: 0
+				margin: 0
+				list-style-type: none
+				a
+					font-weight: 400
+					font-size: 16px
+					line-height: 210.2%
+					color: #000000
+					text-decoration: none
+					padding-left: 65px
+					&:hover
+						color: #357D3D
 .header
 	background: #4E4E4E
 	//position: sticky
@@ -280,7 +393,78 @@
 			font-size: 14px
 	.header-home__call
 		padding-left: 0
+	.menu
+		&__menu
+			a
+				font-size: 21px
 @media(max-width: 767px)
+	.menu
+		.header
+			&__lang
+				display: block
+				order: 4
+				width: 100%
+				&-drop
+					left: 0
+					right: auto
+					padding-left: 25px
+					a
+						text-align: left
+			&__country
+				display: block
+				order: 5
+				width: 100%
+				&-drop
+					left: 0
+					right: auto
+					padding-left: 25px
+					a
+						text-align: left
+		&__menu
+			flex-wrap: wrap
+			grid-gap: 15px 25px
+			justify-content: flex-start
+			padding: 25px 0
+		&-top__phone
+			padding-top: 25px
+			width: 100%
+			span
+				display: none
+		&__bot
+			display: block
+		&__col
+			margin-bottom: 50px
+			width: 100%
+		&__cont
+			display: none
+			&>li.lk
+				padding-top: 0
+		&__title
+			position: relative
+			&::after
+				content: ""
+				display: block
+				width: 28px
+				height: 16px
+				position: absolute
+				right: 0
+				top: 15px
+				@include trs
+				background: url('../img/main/menu-title.svg') center no-repeat
+			span
+				display: none
+			&.active
+				&::after
+					transform: rotate(180deg)
+		&-top
+			&__wrap
+				flex-wrap: wrap
+				height: auto
+				padding-top: 16px
+				padding-bottom: 50px
+				grid-gap: 25px
+			&__phone
+				order: 3
 	.content
 		min-height: 0
 	.footer
@@ -317,7 +501,17 @@
 				fill: #000
 	.header-home
 		margin-bottom: 0
+	.menu
+		&__menu
+			padding: 35px 0
+			a
+				width: 100%
+				font-size: 25px
+				line-height: 183.7%
 @media(max-width: 355px)
 	.footer
 		&__price
 			width: 140px
+	.menu
+		&__title
+			font-size: 36px

@@ -198,3 +198,17 @@ $('.overlay-filters').on('click', function (e) {
         $(".filters__cities-wrap").getNiceScroll().resize();
     }
 });
+
+$(".menu__title").on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $(this).next('.menu__cont').toggle();
+});
+$(".header__menu").on('click', function (e) {
+    e.preventDefault();
+    $(".menu").addClass('active');
+});
+$(".menu-top__close").on('click', function (e) {
+    e.preventDefault();
+    $(".menu").removeClass('active');
+});
