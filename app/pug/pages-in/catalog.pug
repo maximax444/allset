@@ -1,0 +1,312 @@
+section.catalog
+    .container 
+        h1.catalog__title Каталог вакансий
+        .catalog__top 
+            form.catalog__form
+                input(placeholder="Найти работу" required)
+                button
+                    img(src="../img/main/search.svg", alt="")
+            .catalog-drop
+                .catalog-drop__top По новизне
+                .catalog-drop__drop 
+                    a(href="#")  По старости
+            .catalog-drop
+                .catalog-drop__top По убыванию зарплаты
+                .catalog-drop__drop 
+                    a(href="#")  По возрастанию зарплаты
+        .catalog__all 
+            form.catalog__filters 
+                .filters__block 
+                    .filters__title Заработная плата
+                    .filters__cont
+                        .filters__price 
+                            span.first
+                                span 70 000 
+                                | ₽ 
+                            span.last
+                                span 190 000 
+                                | ₽ 
+                        #slider-range
+                        label.radio
+                            input(type="checkbox" name="fs" checked)
+                            span 
+                            p Не имеет значения
+                .filters__block 
+                    .filters__title Страна
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p ОАЭ
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Россия
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Киргизия
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Казахстан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Беларусь
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Азербайджан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Армения
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Грузия
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Узбекистан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Таджикистан
+                        label.radio
+                            input(type="radio" name="f1")
+                            span 
+                            p Турция
+                .filters__block 
+                    .filters__title Город
+                    .filters__cont
+                        .filters__cities Санкт-Петербург
+                        .filters__cities-wrap
+                            label.checkbox
+                                input(type="checkbox" name="fs" checked)
+                                span 
+                                p Санкт-Петербург
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Самара
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Светлогорск
+                            label.checkbox
+                                input(type="checkbox" name="fs")
+                                span 
+                                p Сыктывкар
+                .filters__block 
+                    .filters__title Требуемый опыт работы
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p От 1 года до 3 лет
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p От 3 до 6 лет
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p Нет опыта
+                        label.radio
+                            input(type="radio" name="f6")
+                            span 
+                            p Более 6 лет
+                .filters__block 
+                    .filters__title Тип занятости
+                    .filters__cont
+                        label.checkbox
+                            input(type="checkbox" name="f3")
+                            span 
+                            p Постоянная
+                        label.checkbox
+                            input(type="checkbox" name="f3")
+                            span 
+                            p Совмещенная
+                        label.checkbox
+                            input(type="checkbox" name="f3")
+                            span 
+                            p Вахта
+                .filters__block 
+                    .filters__title График работы
+                    .filters__cont
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Полный день
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Удаленная работа
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Сменный график
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Гибкий график
+                .filters__block 
+                    .filters__title Формат работы
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f5")
+                            span 
+                            p На территории работодателя
+                        label.radio
+                            input(type="radio" name="f5")
+                            span 
+                            p Удаленно
+                        label.radio
+                            input(type="radio" name="f5")
+                            span 
+                            p Гибрид
+                .filters__block 
+                    .filters__title Релокация
+                    .filters__cont
+                        label.radio
+                            input(type="radio" name="f2")
+                            span 
+                            p Есть
+                        label.radio
+                            input(type="radio" name="f2")
+                            span 
+                            p Нет
+                        label.radio
+                            input(type="radio" name="f2")
+                            span 
+                            p Не имеет значения
+                .filters__block 
+                    .filters__title Образование
+                    .filters__cont
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Среднее
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Высшее
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Неоконченное высшее
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p Среднее специальное
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p КН
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p ДН
+                        label.checkbox
+                            input(type="checkbox" name="f4")
+                            span 
+                            p МВА
+                button.catalog__filters-clear.btn(type="reset") Сбросить все
+            .catalog__wrap 
+                a.catalog__block(href="")
+                    button.catalog__wish 
+                        img(src="../img/main/wish.svg", alt="")
+                    .catalog__name Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.btn.btn--full Откликнуться
+                        .catalog__q.btn.btn--black Задать вопрос работодателю
+                a.catalog__block(href="")
+                    button.catalog__wish 
+                        img(src="../img/main/wish.svg", alt="")
+                    .catalog__name Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.btn.btn--full Откликнуться
+                        .catalog__q.btn.btn--black Задать вопрос работодателю
+                a.catalog__block(href="")
+                    button.catalog__wish 
+                        img(src="../img/main/wish.svg", alt="")
+                    .catalog__name Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.btn.btn--full Откликнуться
+                        .catalog__q.btn.btn--black Задать вопрос работодателю
+                a.catalog__block(href="")
+                    button.catalog__wish 
+                        img(src="../img/main/wish.svg", alt="")
+                    .catalog__name Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.btn.btn--full Откликнуться
+                        .catalog__q.btn.btn--black Задать вопрос работодателю
+                a.catalog__block(href="")
+                    button.catalog__wish    
+                        img(src="../img/main/wish.svg", alt="")
+                    .catalog__name Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.btn.btn--full Откликнуться
+                        .catalog__q.btn.btn--black Задать вопрос работодателю
+        .news__pag
+            a.news__prev.disabled(href="/news.html")
+                img(src="../img/pages/pag-prev.svg", alt="")
+            span.current 1
+            a(href="/news.html") 2
+            a(href="/news.html") 3
+            a(href="/news.html") 4
+            span ...
+            a(href="/news.html") 20
+            a.news__next(href="/news.html")
+                img(src="../img/pages/pag-next.svg", alt="")

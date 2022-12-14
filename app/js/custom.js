@@ -147,10 +147,10 @@ $(".filters__cities-wrap").niceScroll({
 $(".filters__cities-wrap input").each(function () {
     $(this).on('change', function () {
         let nCit = '';
-        $('.filters__cities-wrap input:checkbox:checked').each(function () {
+        $(this).closest('.filters__cities-wrap').find('input:checkbox:checked').each(function () {
             nCit = nCit + $(this).next('span').next('p').html() + ', ';
         });
-        $(".filters__cities").html(nCit.slice(0, -2));
+        $(this).closest(".filters__cont").find('.filters__cities').html(nCit.slice(0, -2));
     });
 });
 $(function () {
@@ -211,4 +211,13 @@ $(".header__menu").on('click', function (e) {
 $(".menu-top__close").on('click', function (e) {
     e.preventDefault();
     $(".menu").removeClass('active');
+});
+$('.catalog__filters input').on('change', function () {
+    $('.catalog__filters .btn-pr').hide();
+    let btn = "<button class='btn btn--grey btn-pr' style='top:" + ($(this).closest('label').position().top - 15) + "px;'>Применить</button>";
+    $(this).closest('.filters__cont').append(btn);
+});
+$('.catalog-drop__top').on('click', function (e) {
+    e.preventDefault();
+    $(this).next('.catalog-drop__drop').toggleClass('active');
 });
