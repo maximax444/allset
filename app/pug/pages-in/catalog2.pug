@@ -1,9 +1,9 @@
 section.catalog
     .container 
-        h1.catalog__title Каталог вакансий
+        h1.catalog__title Каталог соискателей
         .catalog__top 
             form.catalog__form
-                input(placeholder="Найти работу" required)
+                input(placeholder="Найти сотрудника" required)
                 button
                     img(src="../img/main/search.svg", alt="")
             .catalog-drop
@@ -255,66 +255,92 @@ section.catalog
                             p МВА
                 button.catalog__filters-clear.btn(type="reset") Сбросить все
             .catalog__wrap 
-                a.catalog__block(href="")
+                a.catalog__block.catalog2__block(href="/")
                     button.catalog__wish 
                         img(src="../img/main/wish.svg", alt="")
-                    .catalog__name Графический дизайнер
-                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog2__top 
+                        .catalog2__img 
+                            img(src="../img/pages/person.png", alt="")
+                        .catalog2__info
+                            .catalog__name Имя Фамилия
+                            .catalog__price 80 000 – 150 000 ₽
                     .catalog__links
-                        span Сбер банк 
+                        span Россия 
                         span Санкт-Петербург
-                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
-                    .catalog__bottom 
-                        .catalog__link.btn.btn--full Откликнуться
-                        //- .catalog__q.btn.btn--black Задать вопрос работодателю
-                a.catalog__block(href="")
+                    .catalog2__line 
+                        b Опыт работы: 
+                        | 8 лет 10 месяцев
+                    .catalog2__line 
+                        b Образование: 
+                        | СПБГУ, высшее
+                    .catalog2__line 
+                        b Профессиональные навыки: 
+                        | программирование С++, знание Python...
+                    .catalog2__line 
+                        b Повышение квалификации: 
+                        | курсы “Яндекс Практикум”
+                    .catalog2-cont
+                        .catalog2-cont__title Контакты:
+                        .catalog2-cont__wrap 
+                            span 
+                                img(src="../img/pages/email.svg", alt="")
+                                | ivanov.ivan@yandex.ru
+                            span
+                                img(src="../img/pages/phone.svg", alt="")
+                                | 8 (911) 456-00-00
+                a.catalog__block.catalog2__block(href="/")
                     button.catalog__wish 
                         img(src="../img/main/wish.svg", alt="")
-                    .catalog__name Графический дизайнер
-                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog2__top 
+                        .catalog2__img 
+                            img(src="../img/pages/person.png", alt="")
+                        .catalog2__info
+                            .catalog__name Имя Фамилия
+                            .catalog__price 80 000 – 150 000 ₽
                     .catalog__links
-                        span Сбер банк 
+                        span Россия 
                         span Санкт-Петербург
-                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
-                    .catalog__bottom 
-                        .catalog__link.btn.btn--full Откликнуться
-                        //-.catalog__q.btn.btn--black Задать вопрос работодателю
-                a.catalog__block(href="")
+                    .catalog2__line 
+                        b Опыт работы: 
+                        | 8 лет 10 месяцев
+                    .catalog2__line 
+                        b Образование: 
+                        | СПБГУ, высшее
+                    .catalog2-cont
+                        .catalog2-cont__title Контакты:
+                        .catalog2-cont__wrap 
+                            span 
+                                img(src="../img/pages/email.svg", alt="")
+                                | ivanov.ivan@yandex.ru
+                            span
+                                img(src="../img/pages/phone.svg", alt="")
+                                | 8 (911) 456-00-00
+                    //- .catalog2-nocont
+                    //-     .btn.catalog2-nocont__btn Запросить контакты
+                a.catalog__block.catalog2__block(href="/")
                     button.catalog__wish 
                         img(src="../img/main/wish.svg", alt="")
-                    .catalog__name Графический дизайнер
-                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog2__top 
+                        .catalog2__img 
+                            img(src="../img/pages/person.png", alt="")
+                        .catalog2__info
+                            .catalog__name Имя Фамилия
+                            .catalog__price 80 000 – 150 000 ₽
                     .catalog__links
-                        span Сбер банк 
+                        span Россия 
                         span Санкт-Петербург
-                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
-                    .catalog__bottom 
-                        .catalog__link.btn.btn--full Откликнуться
-                        //-.catalog__q.btn.btn--black Задать вопрос работодателю
-                a.catalog__block(href="")
-                    button.catalog__wish 
-                        img(src="../img/main/wish.svg", alt="")
-                    .catalog__name Графический дизайнер
-                    .catalog__price 80 000 – 150 000 ₽
-                    .catalog__links
-                        span Сбер банк 
-                        span Санкт-Петербург
-                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
-                    .catalog__bottom 
-                        .catalog__link.btn.btn--full Откликнуться
-                        //-.catalog__q.btn.btn--black Задать вопрос работодателю
-                a.catalog__block(href="")
-                    button.catalog__wish    
-                        img(src="../img/main/wish.svg", alt="")
-                    .catalog__name Графический дизайнер
-                    .catalog__price 80 000 – 150 000 ₽
-                    .catalog__links
-                        span Сбер банк 
-                        span Санкт-Петербург
-                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
-                    .catalog__bottom 
-                        .catalog__link.btn.btn--full Откликнуться
-                        //-.catalog__q.btn.btn--black Задать вопрос работодателю
+                    .catalog2__line 
+                        b Опыт работы: 
+                        | 1 год
+                    .catalog2-cont
+                        .catalog2-cont__title Контакты:
+                        .catalog2-cont__wrap 
+                            span 
+                                img(src="../img/pages/email.svg", alt="")
+                                | ivanov.ivan@yandex.ru
+                            span
+                                img(src="../img/pages/phone.svg", alt="")
+                                | 8 (911) 456-00-00
         .news__pag
             a.news__prev.disabled(href="/news.html")
                 img(src="../img/pages/pag-prev.svg", alt="")

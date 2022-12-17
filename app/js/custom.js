@@ -221,3 +221,11 @@ $('.catalog-drop__top').on('click', function (e) {
     e.preventDefault();
     $(this).next('.catalog-drop__drop').toggleClass('active');
 });
+$(".catalog__show").on('click', function (e) {
+    e.preventDefault();
+    $(".catalog__filters").addClass('active');
+});
+$(".catalog__close").on('click', function (e) {
+    e.preventDefault();
+    $(".catalog__filters").removeClass('active');
+});

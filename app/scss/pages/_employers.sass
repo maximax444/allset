@@ -10,6 +10,64 @@
         display: grid
         grid-template-columns: repeat(3, 1fr)
         grid-gap: 49px 47px
+.employer
+    padding-top: 75px
+    padding-bottom: 50px
+    &__title
+        font-weight: 500
+        font-size: 55px
+        line-height: 54px
+        color: #000000
+        margin-bottom: 20px
+    &__top
+        display: flex
+        justify-content: space-between
+        grid-gap: 20px
+    &__img
+        width: 240px
+        height: 240px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        img
+            max-width: 100%
+            max-height: 100%
+    &__text
+        width: 795px
+        max-width: calc(100% - 270px)
+        p
+            margin-top: 0
+            font-weight: 400
+            font-size: 16px
+            line-height: 158.7%
+            color: #000000
+    &-main
+        padding-top: 50px
+        padding-bottom: 7px
+        .contacts-dop__wrap
+            margin-bottom: 0
+        &__title
+            font-weight: 500
+            font-size: 40px
+            line-height: 98.7%
+            margin-bottom: 45px
+        &__block
+            margin-bottom: 45px
+    &-more
+        padding: 50px 0
+        padding-bottom: 120px
+        .catalog
+            &__block
+                margin-bottom: 0
+        &__title
+            font-weight: 500
+            font-size: 40px
+            line-height: 98.7%
+            margin-bottom: 80px
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 48px
 @media(max-width: 1199px)
     .employers
         &__wrap
@@ -18,6 +76,17 @@
     .employers
         &__wrap
             grid-template-columns: repeat(2, 1fr)
+    .employer-main .contacts-dop__wrap
+        grid-gap: 0
+    .employer
+        &__top
+            display: block
+        &__text
+            width: 100%
+            max-width: 100%
+        &-more
+            &__wrap
+                grid-template-columns: repeat(1,1fr)
 @media(max-width: 767px)
     .employers
         padding-top: 50px
@@ -30,3 +99,19 @@
         &__title
             font-size: 40px
             line-height: 98.7%
+    .employer
+        padding-top: 52px
+        padding-bottom: 30px
+        &__title
+            font-weight: 500
+            font-size: 40px
+            line-height: 98.7%
+        &__img
+            height: auto
+            margin-bottom: 34px
+        &-main
+            padding: 30px 0
+        &-more
+            padding-top: 0px
+            &__title
+                margin-bottom: 50px

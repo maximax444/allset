@@ -107,36 +107,323 @@
         </div>
       </div>
       <div class="content">
-        <section class="vacancy">
+        <section class="catalog">
           <div class="container"> 
-            <div class="vacancy__top">Вакансия от 25.09.2022</div>
-            <h1 class="vacancy__title">Графический дизайнер</h1>
-            <div class="vacancy__price">80 000 – 150 000 ₽</div>
-            <div class="vacancy__attr"><span>
-                 Страна, город: <b>Россия, Санкт-Петербург</b></span><span>
-                 Релокация:  <b>нет</b></span><span>
-                 Требуемый опыт работы: <b>1–3 года</b></span><span>
-                 Образование: <b>высшее</b></span><span>
-                 Занятость:  <b>постоянная</b></span></div>
-            <div class="vacancy__wrap"> 
-              <div class="vacancy__main"> 
-                <div class="vacancy__name">JetBrains</div>
-                <div class="vacancy__img"> <img src="img/pages/vacancy.png" alt=""></div>
+            <h1 class="catalog__title">Каталог соискателей</h1>
+            <div class="catalog__top"> 
+              <form class="catalog__form">
+                <input placeholder="Найти сотрудника" required>
+                <button><img src="../img/main/search.svg" alt=""></button>
+              </form>
+              <div class="catalog-drop">
+                <div class="catalog-drop__top">По новизне</div>
+                <div class="catalog-drop__drop"> <a href="#"> По старости</a></div>
               </div>
-              <div class="vacancy__right"> 
-                <div class="vacancy__subtitle">Фактический адрес:</div>
-                <div class="vacancy__cont">Россия, Санкт-Петербург, Малая разночинная 9, офис 508</div>
-                <div class="vacancy__subtitle">Контакты:</div>
-                <div class="vacancy__cont"><span> <img src="img/main/world.svg" alt="">jetbrains.com</span></div>
-                <div class="vacancy__subtitle">Контактное лицо: Дмитрий Петров</div>
-                <div class="vacancy__cont"><span><img src="../img/pages/email.svg" alt="">pr@allset.ru</span><span><img src="../img/pages/phone.svg" alt="">8 (800) 250-XX-XX</span></div>
+              <div class="catalog-drop">
+                <div class="catalog-drop__top">По убыванию зарплаты</div>
+                <div class="catalog-drop__drop"> <a href="#"> По возрастанию зарплаты</a></div>
               </div>
+            </div><a class="catalog__show"><img src="../img/pages/show-filters.svg" alt="">Фильтры</a>
+            <div class="catalog__all"> 
+              <form class="catalog__filters"> 
+                <div class="catalog__mob">
+                  <div class="catalog__close"><img src="../img/main/close-fil.svg" alt=""></div>
+                  <div class="catalog-drop">
+                    <div class="catalog-drop__top">По новизне</div>
+                    <div class="catalog-drop__drop"> <a href="#"> По старости</a></div>
+                  </div>
+                  <div class="catalog-drop">
+                    <div class="catalog-drop__top">По убыванию зарплаты</div>
+                    <div class="catalog-drop__drop"> <a href="#"> По возрастанию зарплаты</a></div>
+                  </div>
+                  <button class="btn btn--full">Применить и искать</button>
+                  <button class="catalog__filters-clear btn" type="reset">Сбросить</button>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Заработная плата</div>
+                  <div class="filters__cont">
+                    <div class="filters__price"> <span class="first"><span>70 000 </span>₽ </span><span class="last"><span>190 000 </span>₽ </span></div>
+                    <div id="slider-range"></div>
+                    <label class="radio">
+                      <input type="checkbox" name="fs" checked><span> </span>
+                      <p>Не имеет значения</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Страна</div>
+                  <div class="filters__cont">
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>ОАЭ</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Россия</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Киргизия</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Казахстан</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Беларусь</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Азербайджан</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Армения</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Грузия</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Узбекистан</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Таджикистан</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f1"><span> </span>
+                      <p>Турция</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Город</div>
+                  <div class="filters__cont">
+                    <div class="filters__cities">Санкт-Петербург</div>
+                    <div class="filters__cities-wrap">
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs" checked><span> </span>
+                        <p>Санкт-Петербург</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Самара</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Светлогорск</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Сыктывкар</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Светлогорск</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Сыктывкар</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Светлогорск</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Сыктывкар</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Светлогорск</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="fs"><span> </span>
+                        <p>Сыктывкар</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Требуемый опыт работы</div>
+                  <div class="filters__cont">
+                    <label class="radio">
+                      <input type="radio" name="f6"><span> </span>
+                      <p>От 1 года до 3 лет</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f6"><span> </span>
+                      <p>От 3 до 6 лет</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f6"><span> </span>
+                      <p>Нет опыта</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f6"><span> </span>
+                      <p>Более 6 лет</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Тип занятости</div>
+                  <div class="filters__cont">
+                    <label class="checkbox">
+                      <input type="checkbox" name="f3"><span> </span>
+                      <p>Постоянная</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f3"><span> </span>
+                      <p>Совмещенная</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f3"><span> </span>
+                      <p>Вахта</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">График работы</div>
+                  <div class="filters__cont">
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Полный день</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Удаленная работа</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Сменный график</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Гибкий график</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Формат работы</div>
+                  <div class="filters__cont">
+                    <label class="radio">
+                      <input type="radio" name="f5"><span> </span>
+                      <p>На территории работодателя</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f5"><span> </span>
+                      <p>Удаленно</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f5"><span> </span>
+                      <p>Гибрид</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Релокация</div>
+                  <div class="filters__cont">
+                    <label class="radio">
+                      <input type="radio" name="f2"><span> </span>
+                      <p>Есть</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f2"><span> </span>
+                      <p>Нет</p>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="f2"><span> </span>
+                      <p>Не имеет значения</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="filters__block"> 
+                  <div class="filters__title">Образование</div>
+                  <div class="filters__cont">
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Среднее</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Высшее</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Неоконченное высшее</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>Среднее специальное</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>КН</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>ДН</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="f4"><span> </span>
+                      <p>МВА</p>
+                    </label>
+                  </div>
+                </div>
+                <button class="catalog__filters-clear btn" type="reset">Сбросить все</button>
+              </form>
+              <div class="catalog__wrap"> <a class="catalog__block catalog2__block" href="/">
+                  <button class="catalog__wish"> <img src="../img/main/wish.svg" alt=""></button>
+                  <div class="catalog2__top"> 
+                    <div class="catalog2__img"> <img src="../img/pages/person.png" alt=""></div>
+                    <div class="catalog2__info">
+                      <div class="catalog__name">Имя Фамилия</div>
+                      <div class="catalog__price">80 000 – 150 000 ₽</div>
+                    </div>
+                  </div>
+                  <div class="catalog__links"><span>Россия </span><span>Санкт-Петербург</span></div>
+                  <div class="catalog2__line"> <b>Опыт работы: </b>8 лет 10 месяцев</div>
+                  <div class="catalog2__line"> <b>Образование: </b>СПБГУ, высшее</div>
+                  <div class="catalog2__line"> <b>Профессиональные навыки: </b>программирование С++, знание Python...</div>
+                  <div class="catalog2__line"> <b>Повышение квалификации: </b>курсы “Яндекс Практикум”</div>
+                  <div class="catalog2-cont">
+                    <div class="catalog2-cont__title">Контакты:</div>
+                    <div class="catalog2-cont__wrap"> <span> <img src="../img/pages/email.svg" alt="">ivanov.ivan@yandex.ru</span><span><img src="../img/pages/phone.svg" alt="">8 (911) 456-00-00</span></div>
+                  </div></a><a class="catalog__block catalog2__block" href="/">
+                  <button class="catalog__wish"> <img src="../img/main/wish.svg" alt=""></button>
+                  <div class="catalog2__top"> 
+                    <div class="catalog2__img"> <img src="../img/pages/person.png" alt=""></div>
+                    <div class="catalog2__info">
+                      <div class="catalog__name">Имя Фамилия</div>
+                      <div class="catalog__price">80 000 – 150 000 ₽</div>
+                    </div>
+                  </div>
+                  <div class="catalog__links"><span>Россия </span><span>Санкт-Петербург</span></div>
+                  <div class="catalog2__line"> <b>Опыт работы: </b>8 лет 10 месяцев</div>
+                  <div class="catalog2__line"> <b>Образование: </b>СПБГУ, высшее</div>
+                  <div class="catalog2-cont">
+                    <div class="catalog2-cont__title">Контакты:</div>
+                    <div class="catalog2-cont__wrap"> <span> <img src="../img/pages/email.svg" alt="">ivanov.ivan@yandex.ru</span><span><img src="../img/pages/phone.svg" alt="">8 (911) 456-00-00</span></div>
+                  </div></a><a class="catalog__block catalog2__block" href="/">
+                  <button class="catalog__wish"> <img src="../img/main/wish.svg" alt=""></button>
+                  <div class="catalog2__top"> 
+                    <div class="catalog2__img"> <img src="../img/pages/person.png" alt=""></div>
+                    <div class="catalog2__info">
+                      <div class="catalog__name">Имя Фамилия</div>
+                      <div class="catalog__price">80 000 – 150 000 ₽</div>
+                    </div>
+                  </div>
+                  <div class="catalog__links"><span>Россия </span><span>Санкт-Петербург</span></div>
+                  <div class="catalog2__line"> <b>Опыт работы: </b>1 год</div>
+                  <div class="catalog2-cont">
+                    <div class="catalog2-cont__title">Контакты:</div>
+                    <div class="catalog2-cont__wrap"> <span> <img src="../img/pages/email.svg" alt="">ivanov.ivan@yandex.ru</span><span><img src="../img/pages/phone.svg" alt="">8 (911) 456-00-00</span></div>
+                  </div></a></div>
             </div>
-            <div class="vacancy__text"> 
-              <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-              <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
-            </div>
-            <div class="vacancy__bottom"> <a class="btn btn--full" href="/">Откликнуться</a></div>
+            <div class="news__pag"><a class="news__prev disabled" href="/news.html"><img src="../img/pages/pag-prev.svg" alt=""></a><span class="current">1</span><a href="/news.html">2</a><a href="/news.html">3</a><a href="/news.html">4</a><span>...</span><a href="/news.html">20</a><a class="news__next" href="/news.html"><img src="../img/pages/pag-next.svg" alt=""></a></div>
           </div>
         </section>
       </div>

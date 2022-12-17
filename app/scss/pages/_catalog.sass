@@ -167,6 +167,58 @@
         align-items: center
         grid-gap: 37px
         padding-top: 27px
+    &__mob
+        display: none
+    &__show
+        display: none
+    &2
+        &__line
+            margin-bottom: 27px
+            font-size: 20px
+            line-height: 136.7%
+            color: #000000
+        &__top
+            display: flex
+            align-items: center
+            grid-gap: 30px
+            margin-bottom: 26px
+            .catalog__price
+                margin-bottom: 0
+        &__info
+            width: calc(100% - 122px)
+        &__img
+            width: 92px
+            height: 92px
+            border-radius: 50%
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &-cont
+            border-top: 1px solid #357D3D
+            padding-top: 40px
+            &__title
+                margin-bottom: 12px
+                font-weight: 700
+                font-size: 20px
+                line-height: 98.7%
+                color: #000000
+            &__wrap
+                display: flex
+                justify-content: space-between
+                align-items: center
+                span
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    font-size: 16px
+                    line-height: 224.2%
+                    grid-gap: 10px
+        &-nocont
+            border-top: 1px solid #357D3D
+            padding-top: 50px
+            display: flex
+            justify-content: flex-end
 @media(max-width: 1199px)
     .catalog
         &__bottom
@@ -174,14 +226,97 @@
             grid-gap: 15px 25px
 @media(max-width: 991px)
     .catalog
+        &__show
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 58px
+            background: #357D3D
+            border: 1px solid #357D3D
+            border-radius: 143px
+            grid-gap: 18px
+            font-size: 16px
+            line-height: 158.7%
+            color: #FFFFFF
+            margin-bottom: 50px
+        &__top
+            margin-bottom: 16px
+            .catalog-drop
+                display: none
         &-drop
-            display: none
+            margin-bottom: 30px
+            text-align: left
+            &__drop
+                position: static
+                padding-bottom: 20px
+                display: none
+                &.active
+                    display: block
+        &__close
+            cursor: pointer
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 50px
+            height: 50px
+            margin: 0 auto
+            margin-bottom: 50px
         &__filters
-            display: none
+            width: 100vw
+            height: 100vh
+            position: fixed
+            overflow-y: scroll
+            top: 0
+            left: -100vw
+            z-index: 15
+            background-color: #fff
+            padding: 35px 20px
+            @include trs
+            &>button
+                display: none
+            &.active
+                left: 0
         &__wrap
             width: 100%
             max-width: 100%
+        &__mob
+            display: block
+            padding-bottom: 40px
+            text-align: center
+            margin-bottom: -1px
+            position: relative
+            z-index: 2
+            border-bottom: 1px solid #fff
+            .btn
+                margin-bottom: 16px
+                display: inline-block
 @media(max-width: 575px)
+    .catalog2
+        &__block
+            padding-bottom: 50px
+        &__top
+            display: block
+        &__img
+            margin-bottom: 23px
+        &__info
+            width: 100%
+        &__line
+            font-size: 16px
+            line-height: 136.7%
+            margin-bottom: 15px
+        &-cont
+            margin-top: 35px
+            &__wrap
+                flex-direction: column
+                align-items: flex-start
+                grid-gap: 6px
+        &-nocont
+            padding-top: 44px
+            &__btn
+                width: 100%
+                padding-left: 15px
+                padding-right: 15px
     .catalog
         padding-top: 52px
         padding-bottom: 64px
@@ -190,8 +325,6 @@
             line-height: 98.7%
             margin-bottom: 52px
             max-width: 50%
-        &__top
-            margin-bottom: 52px
         &__bottom
             align-items: center
             flex-direction: column
