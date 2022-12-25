@@ -1,0 +1,243 @@
+section.lk 
+    .container 
+        h1.lk__title Личный кабинет
+        .lk__main 
+            ul.lk__menu 
+                li 
+                    a(href="/lk-r-main.html") Настройки 
+                li
+                    a(href="/lk-r-vac.html") Вакансии
+                li 
+                    a(href="/lk-r-otkl.html") Отклики
+                li 
+                    a(href="/lk-r-tar.html").active Тарифы и финансы
+            a.lk__logout(href="/")
+                | Выйти
+                img(src="img/pages/logout.svg", alt="")
+        .lk__cont 
+            .lk-r-tar__tabs 
+                a.active(href="") Пакеты
+                a(href="") Услуги
+            .lk-r-tar__cont 
+                .lk-r-tar__cont-block.active
+                    .lk-r-tar__packs 
+                        a.lk-r-tar__pack(href="")
+                            .lk-r-tar__main
+                                .lk-r-tar__stars
+                                    img(src="img/pages/lk-star.svg", alt="")
+                                .lk-r-tar__name Пакет стандартный
+                            .lk-r-tar__activate.btn.btn--full Активировать
+                        a.lk-r-tar__pack(href="")
+                            .lk-r-tar__main
+                                .lk-r-tar__stars
+                                    img(src="img/pages/lk-star.svg", alt="")
+                                    img(src="img/pages/lk-star.svg", alt="")
+                                    img(src="img/pages/lk-star.svg", alt="")
+                                .lk-r-tar__name Пакет премиум
+                            .lk-r-tar__activate.btn.btn--full Активировать
+                    // То, что ниже - если активирована 1 из подписок вместо того, что выше
+                    .lk-r-tar__solo
+                        .lk-r-tar__solo-text В данный момент у вас активирован пакет стандартный
+                        .lk-r-tar__solo-date 
+                            | Дата завершения: 
+                            b 31.12.2022
+                        a.lk-r-tar__pack.hor(href="")
+                            .lk-r-tar__main
+                                .lk-r-tar__stars
+                                    img(src="img/pages/lk-star.svg", alt="")
+                                    img(src="img/pages/lk-star.svg", alt="")
+                                    img(src="img/pages/lk-star.svg", alt="")
+                                .lk-r-tar__name Пакет премиум
+                            .lk-r-tar__activate.btn.btn--full Активировать
+                .lk-r-tar__cont-block
+                    // Если что-то активировано
+                    .lk-r-tar__top
+                        .lk-r-tar__top-title На данный момент у вас активированы следующие услуги:
+                        .lk-r-tar__top-line 
+                            .lk-r-tar__top-name Размещение 1–4 вакансии на 1 месяц
+                            .lk-r-tar__top-date
+                                | Дата завершения: 
+                                b 20.12.2022
+                        .lk-r-tar__top-line 
+                            .lk-r-tar__top-name Горящая вакансия на 10 дней
+                            .lk-r-tar__top-date
+                                | Дата завершения: 
+                                b 20.12.2022
+                        .lk-r-tar__top-line 
+                            .lk-r-tar__top-name Размещение баннера на странице компании на 1 год
+                            .lk-r-tar__top-date
+                                | Дата завершения: 
+                                b 20.12.2022
+                        .lk-r-tar__top-line 
+                            .lk-r-tar__top-name Размещение баннера на странице поиска на 10 дней
+                            .lk-r-tar__top-date
+                                | Дата завершения: 
+                                b 20.12.2022
+                    .lk-r-tar__block 
+                        .lk-r-tar__title Размещение вакансии
+                        .lk-r-tar__titles 
+                            .lk-r-tar__num 
+                            .lk-r-tar__price Цена
+                            .lk-r-tar__per Период
+                            .lk-r-tar__btn
+                        .lk-r-tar__row 
+                            .lk-r-tar__num 1-4
+                            .lk-r-tar__price 
+                                span Цена
+                                |400 ₽ за 1 вакансию
+                            .lk-r-tar__per 
+                                span Период
+                                |1 месяц
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num 5-9
+                            .lk-r-tar__price 
+                                span Цена
+                                |360 ₽ за 1 вакансию
+                            .lk-r-tar__per 
+                                span Период
+                                |1 месяц
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num 10-49
+                            .lk-r-tar__price 
+                                span Цена
+                                |325 ₽ за 1 вакансию
+                            .lk-r-tar__per 
+                                span Период
+                                |1 месяц
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num 50-100
+                            .lk-r-tar__price 
+                                span Цена
+                                |290 ₽ за 1 вакансию
+                            .lk-r-tar__per 
+                                span Период
+                                |1 месяц
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num >100
+                            .lk-r-tar__price 
+                                span Цена
+                                |250 ₽ за 1 вакансию
+                            .lk-r-tar__per 
+                                span Период
+                                |1 месяц
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                    .lk-r-tar__block 
+                        .lk-r-tar__title Горящая вакансия
+                        .lk-r-tar__titles 
+                            .lk-r-tar__num 
+                            .lk-r-tar__price Цена
+                            .lk-r-tar__per Период
+                            .lk-r-tar__btn
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Вакансия отображается вверху страницы поиска при применении фильтров (при применении фильтров выбор региона и специализации)
+                            .lk-r-tar__price 
+                                span Цена
+                                |3 000 ₽ за 1 вакансию
+                            .lk-r-tar__per 
+                                span Период
+                                |10 дней
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                    .lk-r-tar__block 
+                        .lk-r-tar__title Брендинг
+                        .lk-r-tar__titles 
+                            .lk-r-tar__num 
+                            .lk-r-tar__price Цена
+                            .lk-r-tar__per Период
+                            .lk-r-tar__btn
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Размещение баннера на странице компании
+                            .lk-r-tar__price 
+                                span Цена
+                                |25 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |1 год
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Брендирование вакансии (1 шаблон)
+                            .lk-r-tar__price 
+                                span Цена
+                                |15 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |1 год
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                    .lk-r-tar__block 
+                        .lk-r-tar__title Промо
+                        .lk-r-tar__titles 
+                            .lk-r-tar__num 
+                            .lk-r-tar__price Цена
+                            .lk-r-tar__per Период
+                            .lk-r-tar__btn
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Размещение логотипа компании в ленте на главной странице сайта
+                            .lk-r-tar__price 
+                                span Цена
+                                |5 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |10 дней
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Брендирование главной страницы сайта вашим баннером
+                            .lk-r-tar__price 
+                                span Цена
+                                |15 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |10 дней
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Размещение баннера на странице поиска
+                            .lk-r-tar__price 
+                                span Цена
+                                |10 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |10 дней
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Брендирование страницы вакансии
+                            .lk-r-tar__price 
+                                span Цена
+                                |5 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |10 дней
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Личный кабинет
+                            .lk-r-tar__price 
+                                span Цена
+                                |7 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |10 дней
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать
+                        .lk-r-tar__row 
+                            .lk-r-tar__num Размещение вашей вакансии на главной странице сайта
+                            .lk-r-tar__price 
+                                span Цена
+                                |7 000 ₽ 
+                            .lk-r-tar__per 
+                                span Период
+                                |10 дней
+                            .lk-r-tar__btn
+                                a.lk-r-tar__btn-in.btn(href="") Активировать 

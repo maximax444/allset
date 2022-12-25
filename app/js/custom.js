@@ -229,3 +229,15 @@ $(".catalog__close").on('click', function (e) {
     e.preventDefault();
     $(".catalog__filters").removeClass('active');
 });
+(function ($) {
+    $(function () {
+
+        $('.lk-r-tar__tabs').on('click', 'a:not(.active)', function (e) {
+            e.preventDefault();
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.lk__cont').find('.lk-r-tar__cont-block').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
+    });
+})(jQuery);

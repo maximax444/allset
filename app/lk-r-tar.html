@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- Head-->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>AllSet</title>
+  </head>
+  <!-- Head-->
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="container">
+          <div class="header__wrap"><a class="header__logo" href="/">
+              <svg width="183" height="51" viewBox="0 0 183 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_262_5128)">
+                  <path d="M25.5669 51C11.378 51 0 39.6221 0 25.5669C0 11.378 11.378 0 25.5669 0C39.6221 0 51.1339 11.378 51.1339 25.5669C51 39.6221 39.6221 51 25.5669 51Z" fill="#357D3D"></path>
+                  <path d="M15.5277 17.402H20.882L17.9371 23.8271H15.3938C13.6537 23.8271 12.1812 22.3547 12.1812 20.6145C12.3151 18.8744 13.7875 17.402 15.5277 17.402ZM25.7009 14.1894L29.9844 23.961H21.2836L25.7009 14.1894ZM31.4568 27.0397L34.2678 33.4649H16.8663L19.8111 27.0397H31.4568ZM37.882 30.1185C37.882 30.9216 37.6143 31.5909 37.0789 32.2602L34.6694 26.9059C36.4096 27.0397 37.882 28.3783 37.882 30.1185ZM15.5277 26.9059H16.5985L13.6537 33.3311H9.90562V36.4098H12.3151L10.7088 39.8901H14.0552L15.6615 36.5437H34.6694C35.071 36.5437 35.3387 36.5437 35.7403 36.4098L37.3466 39.8901H40.693L38.5513 35.2051C40.1576 34.0004 41.0946 32.1264 41.0946 30.1185C41.0946 26.6382 38.2836 23.8271 34.8033 23.8271H33.4647L30.3859 17.402H40.1576V14.3232H29.0474L25.7009 6.82715L22.3544 14.3232H15.5277C12.0474 14.3232 9.23633 17.1342 9.23633 20.6145C9.23633 24.0949 12.0474 26.9059 15.5277 26.9059Z" fill="white"></path>
+                  <path class="text" d="M85.1334 34.5358L81.787 34.6696L80.3145 31.3232H71.7476L70.2752 34.6696H66.9287L75.4956 16.3311H76.4326L85.1334 34.5358ZM74.8264 24.4964L72.8185 28.9137H79.2437L77.2358 24.4964C76.8342 23.5594 76.4326 22.6224 76.0311 21.4177C75.6295 22.6224 75.2279 23.5594 74.8264 24.4964Z" fill="white"></path>
+                  <path class="text" d="M92.7637 16.3311H95.9763V31.7248H103.874V34.6696H92.7637V16.3311Z" fill="white"></path>
+                  <path class="text" d="M111.771 16.3311H114.984V31.7248H122.882V34.6696H111.771V16.3311Z" fill="white"></path>
+                  <path class="text" d="M128.504 32.7958L129.976 30.3863C131.315 31.591 133.189 32.2603 135.063 32.2603C136.937 32.2603 138.409 31.4572 138.409 29.8509C138.409 28.1107 136.535 27.4414 134.528 26.7721C131.449 25.8351 129.039 24.095 129.039 21.1501C129.039 17.9375 131.85 16.0635 135.197 16.0635C137.339 16.0635 139.079 16.5989 141.087 17.9375L139.748 20.3469C138.142 19.4099 136.803 18.8745 135.331 18.8745C133.724 18.8745 132.252 19.5438 132.252 20.8824C132.252 22.4887 134.126 23.2918 136 23.8273C139.213 24.8981 141.622 26.3706 141.622 29.4493C141.622 32.7958 138.811 34.9375 135.063 34.9375C132.787 34.9375 130.378 34.1343 128.504 32.7958Z" fill="white"></path>
+                  <path class="text" d="M162.103 31.8586V34.6696H150.323V16.3311H161.835V19.1421H153.536V23.961H160.764V26.772H153.536V31.8586H162.103Z" fill="white"></path>
+                  <path class="text" d="M182.851 19.2759H177.63V34.6696H174.418V19.2759H169.331V16.3311H182.851V19.2759Z" fill="white"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_262_5128">
+                    <rect width="182.85" height="51" fill="white"></rect>
+                  </clippath>
+                </defs>
+              </svg></a>
+            <div class="header__call"> 
+              <!--| Помощь по любым вопросам:--><img src="../img/main/call.svg" alt=""><a href="tel:8 (800) 250-ХХ-ХХ">8 (800) 250-ХХ-ХХ </a>
+            </div><a class="header__login" href="/login.html">Войти<img src="../img/main/login.svg" alt=""></a>
+            <div class="header__country">
+              <div class="header__country-top"><span>Россия</span><img src="../img/main/drop.svg" alt=""></div>
+              <div class="header__country-drop"><a href="#">ОАЭ</a><a href="#">Россия</a><a href="#">Киргизия</a><a href="#">Казахстан</a><a href="#">Беларусь</a><a href="#">Азербайджан</a><a href="#">Армения</a><a href="#">Грузия</a><a href="#">Узбекистан</a><a href="#">Таджикистан</a><a href="#">Турция</a></div>
+            </div>
+            <div class="header__lang">
+              <div class="header__lang-top"><span>Rus</span><img src="../img/main/drop.svg" alt=""></div>
+              <div class="header__lang-drop"><a href="#">Rus</a><a href="#">Eng</a><a href="#">Aze</a><a href="#">Ara</a><a href="#">Bel</a><a href="#">Geo</a><a href="#">Kaz</a><a href="#">Kyr</a><a href="#">Deu</a><a href="#">Tgk</a><a href="#">Tur</a><a href="#">Uzb</a></div>
+            </div><a class="header__menu"><img src="../img/main/menu.svg" alt=""></a>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+        <div class="menu-top"> 
+          <div class="container">
+            <div class="menu-top__wrap"> 
+              <div class="menu-top__close"> <img src="../img/main/menu-close.svg" alt=""></div><a class="menu-top__phone" href="tel:8 (800) 250-ХХ-ХХ"><span>Помощь по любым вопросам:</span><img src="../img/main/menu-phone.svg" alt="">8 (800) 250-ХХ-ХХ </a><a class="menu-top__login" href="/login.html">Войти<img src="../img/main/login-b.svg" alt=""></a>
+              <div class="header__country">
+                <div class="header__country-top"><span>Россия</span><img src="../img/main/drop-b.svg" alt=""></div>
+                <div class="header__country-drop"><a href="#">ОАЭ</a><a href="#">Россия</a><a href="#">Киргизия</a><a href="#">Казахстан</a><a href="#">Беларусь</a><a href="#">Азербайджан</a><a href="#">Армения</a><a href="#">Грузия</a><a href="#">Узбекистан</a><a href="#">Таджикистан</a><a href="#">Турция</a></div>
+              </div>
+              <div class="header__lang">
+                <div class="header__lang-top"><span>Rus</span><img src="../img/main/drop-b.svg" alt=""></div>
+                <div class="header__lang-drop"><a href="#">Rus</a><a href="#">Eng</a><a href="#">Aze</a><a href="#">Ara</a><a href="#">Bel</a><a href="#">Geo</a><a href="#">Kaz</a><a href="#">Kyr</a><a href="#">Deu</a><a href="#">Tgk</a><a href="#">Tur</a><a href="#">Uzb</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-all"> 
+          <div class="container">
+            <div class="menu__menu"> <a href="/price.html">Тарифы                                                                            </a><a href="/about.html">О компании</a><a href="/news.html">Новости</a><a href="/policy.html">Правовая информация</a><a href="/contacts.html">Контакты</a></div>
+            <div class="menu__bot"> 
+              <div class="menu__col"> 
+                <div class="menu__title">
+                   Соискателю<span>:</span></div>
+                <ul class="menu__cont">
+                  <li> <a href="">Каталог вакансий</a></li>
+                  <li> <a href="">Работодатели</a></li>
+                  <li class="lk"><a href="">Личный кабинет:</a>
+                    <ul> 
+                      <li> <a href="">Настройки</a></li>
+                      <li> <a href="">Резюме</a></li>
+                      <li> <a href="">Вакансии</a></li>
+                      <li> <a href="">Выйти</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__col"> 
+                <div class="menu__title">
+                   Работодателю<span>:</span></div>
+                <ul class="menu__cont">
+                  <li> <a href="">Каталог соискателей</a></li>
+                  <li class="lk"><a href="">Личный кабинет:</a>
+                    <ul> 
+                      <li> <a href="">Настройки</a></li>
+                      <li> <a href="">Вакансии</a></li>
+                      <li> <a href="">Отклики</a></li>
+                      <li> <a href="">Тарифы и финансы</a></li>
+                      <li> <a href="">Выйти</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <section class="lk"> 
+          <div class="container"> 
+            <h1 class="lk__title">Личный кабинет</h1>
+            <div class="lk__main"> 
+              <ul class="lk__menu"> 
+                <li> <a href="/lk-r-main.html">Настройки </a></li>
+                <li><a href="/lk-r-vac.html">Вакансии</a></li>
+                <li> <a href="/lk-r-otkl.html">Отклики</a></li>
+                <li> <a class="active" href="/lk-r-tar.html">Тарифы и финансы</a></li>
+              </ul><a class="lk__logout" href="/">Выйти<img src="img/pages/logout.svg" alt=""></a>
+            </div>
+            <div class="lk__cont"> 
+              <div class="lk-r-tar__tabs"> <a class="active" href="">Пакеты</a><a href="">Услуги</a></div>
+              <div class="lk-r-tar__cont"> 
+                <div class="lk-r-tar__cont-block active">
+                  <div class="lk-r-tar__packs"> <a class="lk-r-tar__pack" href="">
+                      <div class="lk-r-tar__main">
+                        <div class="lk-r-tar__stars"><img src="img/pages/lk-star.svg" alt=""></div>
+                        <div class="lk-r-tar__name">Пакет стандартный</div>
+                      </div>
+                      <div class="lk-r-tar__activate btn btn--full">Активировать</div></a><a class="lk-r-tar__pack" href="">
+                      <div class="lk-r-tar__main">
+                        <div class="lk-r-tar__stars"><img src="img/pages/lk-star.svg" alt=""><img src="img/pages/lk-star.svg" alt=""><img src="img/pages/lk-star.svg" alt=""></div>
+                        <div class="lk-r-tar__name">Пакет премиум</div>
+                      </div>
+                      <div class="lk-r-tar__activate btn btn--full">Активировать</div></a></div>
+                  <!-- То, что ниже - если активирована 1 из подписок вместо того, что выше-->
+                  <div class="lk-r-tar__solo">
+                    <div class="lk-r-tar__solo-text">В данный момент у вас активирован пакет стандартный</div>
+                    <div class="lk-r-tar__solo-date">
+                       Дата завершения: <b>31.12.2022</b></div><a class="lk-r-tar__pack hor" href="">
+                      <div class="lk-r-tar__main">
+                        <div class="lk-r-tar__stars"><img src="img/pages/lk-star.svg" alt=""><img src="img/pages/lk-star.svg" alt=""><img src="img/pages/lk-star.svg" alt=""></div>
+                        <div class="lk-r-tar__name">Пакет премиум</div>
+                      </div>
+                      <div class="lk-r-tar__activate btn btn--full">Активировать</div></a>
+                  </div>
+                </div>
+                <div class="lk-r-tar__cont-block">
+                  <!-- Если что-то активировано-->
+                  <div class="lk-r-tar__top">
+                    <div class="lk-r-tar__top-title">На данный момент у вас активированы следующие услуги:</div>
+                    <div class="lk-r-tar__top-line"> 
+                      <div class="lk-r-tar__top-name">Размещение 1–4 вакансии на 1 месяц</div>
+                      <div class="lk-r-tar__top-date">Дата завершения: <b>20.12.2022</b></div>
+                    </div>
+                    <div class="lk-r-tar__top-line"> 
+                      <div class="lk-r-tar__top-name">Горящая вакансия на 10 дней</div>
+                      <div class="lk-r-tar__top-date">Дата завершения: <b>20.12.2022</b></div>
+                    </div>
+                    <div class="lk-r-tar__top-line"> 
+                      <div class="lk-r-tar__top-name">Размещение баннера на странице компании на 1 год</div>
+                      <div class="lk-r-tar__top-date">Дата завершения: <b>20.12.2022</b></div>
+                    </div>
+                    <div class="lk-r-tar__top-line"> 
+                      <div class="lk-r-tar__top-name">Размещение баннера на странице поиска на 10 дней</div>
+                      <div class="lk-r-tar__top-date">Дата завершения: <b>20.12.2022</b></div>
+                    </div>
+                  </div>
+                  <div class="lk-r-tar__block"> 
+                    <div class="lk-r-tar__title">Размещение вакансии</div>
+                    <div class="lk-r-tar__titles"> 
+                      <div class="lk-r-tar__num"> </div>
+                      <div class="lk-r-tar__price">Цена</div>
+                      <div class="lk-r-tar__per">Период</div>
+                      <div class="lk-r-tar__btn"></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">1-4</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>400 ₽ за 1 вакансию</div>
+                      <div class="lk-r-tar__per"> <span>Период</span>1 месяц</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">5-9</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>360 ₽ за 1 вакансию</div>
+                      <div class="lk-r-tar__per"> <span>Период</span>1 месяц</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">10-49</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>325 ₽ за 1 вакансию</div>
+                      <div class="lk-r-tar__per"> <span>Период</span>1 месяц</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">50-100</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>290 ₽ за 1 вакансию</div>
+                      <div class="lk-r-tar__per"> <span>Период</span>1 месяц</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">>100</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>250 ₽ за 1 вакансию</div>
+                      <div class="lk-r-tar__per"> <span>Период</span>1 месяц</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                  </div>
+                  <div class="lk-r-tar__block"> 
+                    <div class="lk-r-tar__title">Горящая вакансия</div>
+                    <div class="lk-r-tar__titles"> 
+                      <div class="lk-r-tar__num"> </div>
+                      <div class="lk-r-tar__price">Цена</div>
+                      <div class="lk-r-tar__per">Период</div>
+                      <div class="lk-r-tar__btn"></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Вакансия отображается вверху страницы поиска при применении фильтров (при применении фильтров выбор региона и специализации)</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>3 000 ₽ за 1 вакансию</div>
+                      <div class="lk-r-tar__per"> <span>Период</span>10 дней</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                  </div>
+                  <div class="lk-r-tar__block"> 
+                    <div class="lk-r-tar__title">Брендинг</div>
+                    <div class="lk-r-tar__titles"> 
+                      <div class="lk-r-tar__num"> </div>
+                      <div class="lk-r-tar__price">Цена</div>
+                      <div class="lk-r-tar__per">Период</div>
+                      <div class="lk-r-tar__btn"></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Размещение баннера на странице компании</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>25 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>1 год</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Брендирование вакансии (1 шаблон)</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>15 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>1 год</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                  </div>
+                  <div class="lk-r-tar__block"> 
+                    <div class="lk-r-tar__title">Промо</div>
+                    <div class="lk-r-tar__titles"> 
+                      <div class="lk-r-tar__num"> </div>
+                      <div class="lk-r-tar__price">Цена</div>
+                      <div class="lk-r-tar__per">Период</div>
+                      <div class="lk-r-tar__btn"></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Размещение логотипа компании в ленте на главной странице сайта</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>5 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>10 дней</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Брендирование главной страницы сайта вашим баннером</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>15 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>10 дней</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Размещение баннера на странице поиска</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>10 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>10 дней</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Брендирование страницы вакансии</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>5 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>10 дней</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Личный кабинет</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>7 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>10 дней</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать</a></div>
+                    </div>
+                    <div class="lk-r-tar__row"> 
+                      <div class="lk-r-tar__num">Размещение вашей вакансии на главной странице сайта</div>
+                      <div class="lk-r-tar__price"> <span>Цена</span>7 000 ₽ </div>
+                      <div class="lk-r-tar__per"> <span>Период</span>10 дней</div>
+                      <div class="lk-r-tar__btn"><a class="lk-r-tar__btn-in btn" href="">Активировать </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="overlay overlay-filters"> 
+        <div class="filters"> 
+          <div class="filters__close"> 
+            <svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L26.9999 26.9999" stroke="white" stroke-width="3"></path>
+              <path d="M27 2L2.00015 26.9999" stroke="white" stroke-width="3"></path>
+            </svg>
+          </div>
+          <div class="filters__top">
+            <form class="main__form">
+              <input placeholder="Найти работу" required>
+              <button class="filters__search"><img src="../img/main/search.svg" alt=""></button>
+            </form>
+            <button class="filters__search">Применить и искать</button>
+            <button class="filters__reset">Сбросить</button>
+          </div>
+          <form class="filters__wrap"> 
+            <input class="searchText" type="hidden" name="searchText">
+            <div class="filters__col"> 
+              <div class="filters__block"> 
+                <div class="filters__title">Заработная плата</div>
+                <div class="filters__cont">
+                  <div class="filters__price"> <span class="first"><span>70 000 </span>₽ </span><span class="last"><span>190 000 </span>₽ </span></div>
+                  <div id="slider-range"></div>
+                  <label class="radio">
+                    <input type="checkbox" name="fs" checked><span> </span>
+                    <p>Не имеет значения</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Страна</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>ОАЭ</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Россия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Киргизия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Казахстан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Беларусь</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Азербайджан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Армения</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Грузия</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Узбекистан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Таджикистан</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f1"><span> </span>
+                    <p>Турция</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Город</div>
+                <div class="filters__cont">
+                  <div class="filters__cities">Санкт-Петербург</div>
+                  <div class="filters__cities-wrap">
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs" checked><span> </span>
+                      <p>Санкт-Петербург</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Самара</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Светлогорск</p>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" name="fs"><span> </span>
+                      <p>Сыктывкар</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Требуемый опыт работы</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>От 1 года до 3 лет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>От 3 до 6 лет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>Нет опыта</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f6"><span> </span>
+                    <p>Более 6 лет</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filters__col">
+              <div class="filters__block"> 
+                <div class="filters__title">Тип занятости</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Постоянная</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Совмещенная</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f3"><span> </span>
+                    <p>Вахта</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">График работы</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Полный день</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Удаленная работа</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Сменный график</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Гибкий график</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Формат работы</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>На территории работодателя</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>Удаленно</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f5"><span> </span>
+                    <p>Гибрид</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Релокация</div>
+                <div class="filters__cont">
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Есть</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Нет</p>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="f2"><span> </span>
+                    <p>Не имеет значения</p>
+                  </label>
+                </div>
+              </div>
+              <div class="filters__block"> 
+                <div class="filters__title">Образование</div>
+                <div class="filters__cont">
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Среднее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Высшее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Неоконченное высшее</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>Среднее специальное</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>КН</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>ДН</p>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="f4"><span> </span>
+                    <p>МВА</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container"> 
+          <div class="footer__wrap"> 
+            <div class="footer__left">
+              <div class="footer__copy">© 2022<br>ООО «АЛЛСЕТ»</div><a class="footer__price" href="/price.html">Тарифы</a>
+            </div>
+            <div class="footer__soc"><a href="#"><img src="../img/main/vk.svg" alt=""></a><a href="#"><img src="../img/main/telegram.svg" alt=""></a><a href="#"><img src="../img/main/wa.svg" alt=""></a></div>
+            <div class="footer__right">
+              <!--.footer__title-->
+              <!--    span Подпишитесь на рассылку-->
+              <!--    | и получайте самые актуальные новости от Allset!-->
+              <!--form.footer__form-->
+              <!--    input(placeholder="E-mail" required)-->
+              <!--    button-->
+              <!--        img(src="../img/main/footer-form.svg", alt="")-->
+            </div>
+          </div>
+          <div class="footer__bottom"><a class="footer__rules" href="/policy.html">Правила использования платформы</a><a class="footer__polit" href="/policy.html">Политика конфиденциальности</a><a class="footer__dev" href="#">Разработка сайта<img src="../img/main/hero-logo.svg" alt=""></a></div>
+        </div>
+      </footer>
+    </div>
+    <!-- Script-->
+    <script src="js/main.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nicescroll@3.7.4/jquery.nicescroll.js"> </script>
+    <script src="js/custom.js"></script>
+    <!-- Script-->
+  </body>
+</html>

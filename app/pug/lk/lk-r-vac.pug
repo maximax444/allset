@@ -1,0 +1,63 @@
+section.lk 
+    .container 
+        h1.lk__title Личный кабинет
+        .lk__main 
+            ul.lk__menu 
+                li 
+                    a(href="/lk-r-main.html") Настройки 
+                li
+                    a(href="/lk-r-vac.html").active Вакансии
+                li 
+                    a(href="/lk-r-otkl.html") Отклики
+                li 
+                    a(href="/lk-r-tar.html") Тарифы и финансы
+            a.lk__logout(href="/")
+                | Выйти
+                img(src="img/pages/logout.svg", alt="")
+        .lk__cont 
+            a.btn.lk-r-vac__create(href="") Создать вакансию
+            // с этого момента выводится если есть чему
+            h2.lk-r-vac__title Текущие вакансии:
+            .lk-r-vac__wrap 
+                .lk-r-vac__block.catalog__block
+                    button.catalog__wish    
+                        img(src="../img/main/wish.svg", alt="")
+                    a.catalog__name.lk-r-vac__name(href="") Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.lk-r-vac__red.btn.btn--full Редактировать
+                    .lk-r-vac__bottom 
+                        a.lk-r-vac__out.btn.btn--black(href="/") Снять с публикации
+                        a.lk-r-vac__del.btn.btn--black(href="/") Удалить
+                .lk-r-vac__block.catalog__block
+                    button.catalog__wish    
+                        img(src="../img/main/wish.svg", alt="")
+                    a.catalog__name.lk-r-vac__name(href="") Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.lk-r-vac__red.btn.btn--full Редактировать
+                    .lk-r-vac__bottom 
+                        a.lk-r-vac__out.btn.btn--black(href="/") Снять с публикации
+                        a.lk-r-vac__del.btn.btn--black(href="/") Удалить
+                .lk-r-vac__block.catalog__block
+                    button.catalog__wish    
+                        img(src="../img/main/wish.svg", alt="")
+                    a.catalog__name.lk-r-vac__name(href="") Графический дизайнер
+                    .catalog__price 80 000 – 150 000 ₽
+                    .catalog__links
+                        span Сбер банк 
+                        span Санкт-Петербург
+                    .catalog__descr Проектирование и дизайн интерфейсов и сайтов. Внесение предложений по улучшению UX/UI проекта. Подготовка графических элементов и их экспорт для дальнейшего объединения в проектах...
+                    .catalog__bottom 
+                        .catalog__link.lk-r-vac__red.btn.btn--full Редактировать
+                    .lk-r-vac__bottom 
+                        a.lk-r-vac__out.btn.btn--black(href="/") Снять с публикации
+                        a.lk-r-vac__del.btn.btn--black(href="/") Удалить
