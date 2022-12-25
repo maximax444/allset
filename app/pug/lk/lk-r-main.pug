@@ -1,0 +1,96 @@
+section.lk 
+    .container 
+        h1.lk__title Личный кабинет
+        .lk__main 
+            ul.lk__menu 
+                li 
+                    a(href="/lk-r-main.html").active Настройки 
+                li
+                    a(href="/lk-r-vac.html") Вакансии
+            a.lk__logout(href="/")
+                | Выйти
+                img(src="img/pages/logout.svg", alt="")
+        .lk__cont 
+            .lk-s-main__top 
+                label.lk-s-main__img
+                    input(type="file", name="")
+                    img(src="img/pages/lk-person.png", alt="")
+                    .lk-s-main__img-hover 
+                        img(src="img/pages/lk-img.svg", alt="")
+                        span Изменить фото
+                .lk-s-main__name Название бренда
+            form.lk-s-main__form
+                .lk-s-main__title Контактные данные
+                label
+                    | Контактное лицо*
+                    input(type="text" required)
+                label
+                    | Контактный e-mail*
+                    input(type="email" required)
+                label
+                    | Контактный номер телефона*
+                    input(type="tel" required)
+                label
+                    | Пароль
+                    input(type="password" required)
+                label
+                    | Должность контактного лица*
+                    input(type="text" required)
+                .lk-s-main__title Данные о компании
+                label
+                    | Название организации*
+                    input(type="text" required)
+                label
+                    | ОГРН*
+                    input(type="text" required)
+                label
+                    | Название бренда*
+                    input(type="text" required)
+                label
+                    | КПП*
+                    input(type="text" required)
+                label
+                    | Страна
+                    .lk-select
+                        input(type="hidden", name="", value="Россия")
+                        .lk-select__top Россия
+                        .lk-select__drop 
+                            a(href="") Россия
+                            a(href="") Россия2
+                            a(href="") Россия3
+                            a(href="") Россия4
+                            a(href="") Россия5
+                label
+                    | Банковские реквизиты*
+                    input(type="text" required)
+                label
+                    | Город
+                    .lk-select
+                        input(type="hidden", name="", value="Санкт-Петербург")
+                        .lk-select__top Санкт-Петербург
+                        .lk-select__drop 
+                            a(href="") Санкт-Петербург
+                            a(href="") Санкт-Петербург2
+                            a(href="") Санкт-Петербург3
+                            a(href="") Санкт-Петербург4
+                            a(href="") Санкт-Петербург5
+                label
+                    | данные ЭДО (Провайдер, id-номер)*
+                    input(type="text" required)
+                label
+                    | Сайт компании
+                    input(type="text")
+                label
+                    | Адрес фактический*
+                    input(type="text" required)
+                label
+                    | ИНН*
+                    input(type="text" required)
+                label
+                    | Адрес юридический*
+                    input(type="text" required)
+                label.textarea
+                    | Информация о компании
+                    textarea(name="", cols="30", rows="10") 
+                .lk-s-main__bottom 
+                    button.btn.btn--full Сохранить

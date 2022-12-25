@@ -236,3 +236,152 @@
                             input(type="checkbox" name="f4")
                             span 
                             p МВА
+.overlay.overlay-create
+    .popup-create 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .popup-create__title Создать вакансию
+        form.popup-create__form
+            label
+                input(type="text" placeholder="Название вакансии" required)
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top Страна
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top Город
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            a.popup-create__spec(href="")  Специализация
+            label.textarea
+                textarea(name="", cols="30", rows="10" placeholder="Описание вакансии...") 
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top Опыт работы
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top График
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top Занятость
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top Релокация
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top Формат работы
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label
+                .lk-select
+                    input(type="hidden", name="", value="Санкт-Петербург")
+                    .lk-select__top Образование
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            .popup-create__bot 
+                .popup-create__bot-title Ожидание заработной платы
+                .popup-create__bot-price
+                    .filters__block
+                        .filters__price 
+                            span.first
+                                span 70 000 
+                                | ₽ 
+                            span.last
+                                span 190 000 
+                                | ₽ 
+                        #slider-range
+                        label.radio
+                            input(type="checkbox" name="fs" checked)
+                            span 
+                            p Не публиковать зп
+            .popup-create__btn 
+                button.btn.btn--full Опубликовать
+.overlay.overlay-spec
+    .filters 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .filters__top
+            form.main__form
+                input(placeholder="Найти работу" required)
+                button.filters__search
+                    img(src="../img/main/search.svg", alt="")
+            button.filters__search Применить и искать
+            button.filters__reset Сбросить
+        .popup-spec__wrap
+            .popup-spec__block  
+                .popup-spec__title АДМИНИСТРАТИВНЫЙ ПЕРСОНАЛ
+                a Администратор
+                a  Архивное дело
+                a  АХО
+                a Делопроизводство, ввод данных, систематизация
+                a Архивариус
+                a.popup-spec__more Развернуть +
+            .popup-spec__block  
+                .popup-spec__title АДМИНИСТРАТИВНЫЙ ПЕРСОНАЛ
+                a Администратор
+                a  Архивное дело
+                a  АХО
+                a Делопроизводство, ввод данных, систематизация
+                a Архивариус
+                a.popup-spec__more Развернуть +
+            .popup-spec__block  
+                .popup-spec__title АДМИНИСТРАТИВНЫЙ ПЕРСОНАЛ
+                a Администратор
+                a  Архивное дело
+                a  АХО
+                a Делопроизводство, ввод данных, систематизация
+                a Архивариус
+                a.popup-spec__more Развернуть +

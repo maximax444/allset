@@ -108,34 +108,93 @@
         </div>
       </div>
       <div class="content">
-        <section class="login">
-          <div class="container">
-            <h1 class="login__title">Регистрация</h1>
-            <div class="login__links"><a href="/reg.html">Соискатель</a><a class="active">Работодатель</a></div>
-            <form class="reg__form back__form">
-              <div class="reg__form-wrap">
-                <div class="reg__form-col">
-                  <input type="text" placeholder="Название организации" required>
-                  <input type="text" placeholder="ИНН" required>
-                  <input type="text" placeholder="КПП" required>
-                  <input type="text" placeholder="ОГРН" required>
-                  <input type="text" placeholder="Банковские реквизиты" required>
-                  <input type="text" placeholder="данные ЭДО (Провайдер, id-номер)" required>
-                  <input type="text" placeholder="Страна" required>
-                </div>
-                <div class="reg__form-col">
-                  <input type="text" placeholder="Город" required>
-                  <input type="text" placeholder="Юридический адрес" required>
-                  <input type="text" placeholder="Адрес фактический" required>
-                  <input type="text" placeholder="Контактное лицо" required>
-                  <input type="tel" placeholder="Контактный номер телефона" required>
-                  <input type="email" placeholder="Контактный e-mail" required>
-                  <input type="password" placeholder="Пароль" required>
-                </div>
+        <section class="lk"> 
+          <div class="container"> 
+            <h1 class="lk__title">Личный кабинет</h1>
+            <div class="lk__main"> 
+              <ul class="lk__menu"> 
+                <li> <a class="active" href="/lk-r-main.html">Настройки </a></li>
+                <li><a href="/lk-r-vac.html">Вакансии</a></li>
+              </ul><a class="lk__logout" href="/">Выйти<img src="img/pages/logout.svg" alt=""></a>
+            </div>
+            <div class="lk__cont"> 
+              <div class="lk-s-main__top"> 
+                <label class="lk-s-main__img">
+                  <input type="file" name=""><img src="img/pages/lk-person.png" alt="">
+                  <div class="lk-s-main__img-hover"> <img src="img/pages/lk-img.svg" alt=""><span>Изменить фото</span></div>
+                </label>
+                <div class="lk-s-main__name">Название бренда</div>
               </div>
-              <button>Зарегистрироваться в личном кабинете</button>
-            </form>
-            <div class="login__polit">Регистрируясь, вы принимаете условия использования платформы Allset и даете Согласие на обработку персональных данных</div><a class="login__reg" href="/login2.html">Войти</a>
+              <form class="lk-s-main__form">
+                <div class="lk-s-main__title">Контактные данные</div>
+                <label>Контактное лицо*
+                  <input type="text" required>
+                </label>
+                <label>Контактный e-mail*
+                  <input type="email" required>
+                </label>
+                <label>Контактный номер телефона*
+                  <input type="tel" required>
+                </label>
+                <label>Пароль
+                  <input type="password" required>
+                </label>
+                <label>Должность контактного лица*
+                  <input type="text" required>
+                </label>
+                <div class="lk-s-main__title">Данные о компании</div>
+                <label>Название организации*
+                  <input type="text" required>
+                </label>
+                <label>ОГРН*
+                  <input type="text" required>
+                </label>
+                <label>Название бренда*
+                  <input type="text" required>
+                </label>
+                <label>КПП*
+                  <input type="text" required>
+                </label>
+                <label>Страна
+                  <div class="lk-select">
+                    <input type="hidden" name="" value="Россия">
+                    <div class="lk-select__top">Россия</div>
+                    <div class="lk-select__drop"> <a href="">Россия</a><a href="">Россия2</a><a href="">Россия3</a><a href="">Россия4</a><a href="">Россия5</a></div>
+                  </div>
+                </label>
+                <label>Банковские реквизиты*
+                  <input type="text" required>
+                </label>
+                <label>Город
+                  <div class="lk-select">
+                    <input type="hidden" name="" value="Санкт-Петербург">
+                    <div class="lk-select__top">Санкт-Петербург</div>
+                    <div class="lk-select__drop"> <a href="">Санкт-Петербург</a><a href="">Санкт-Петербург2</a><a href="">Санкт-Петербург3</a><a href="">Санкт-Петербург4</a><a href="">Санкт-Петербург5</a></div>
+                  </div>
+                </label>
+                <label>данные ЭДО (Провайдер, id-номер)*
+                  <input type="text" required>
+                </label>
+                <label>Сайт компании
+                  <input type="text">
+                </label>
+                <label>Адрес фактический*
+                  <input type="text" required>
+                </label>
+                <label>ИНН*
+                  <input type="text" required>
+                </label>
+                <label>Адрес юридический*
+                  <input type="text" required>
+                </label>
+                <label class="textarea">Информация о компании
+                  <textarea name="" cols="30" rows="10"> </textarea>
+                </label>
+                <div class="lk-s-main__bottom"> 
+                  <button class="btn btn--full">Сохранить</button>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </div>
