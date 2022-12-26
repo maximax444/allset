@@ -178,6 +178,16 @@ $(function () {
             $(".filters__price .last span").html(ui.values[1]);
         }
     });
+    $(".lk-s-res__zp #slider-range").slider({
+        range: true,
+        min: 0,
+        max: 300000,
+        values: [70000, 190000],
+        slide: function (event, ui) {
+            $(".filters__price .first span").html(ui.values[0]);
+            $(".filters__price .last span").html(ui.values[1]);
+        }
+    });
 });
 $(".filters__top .filters__search").on('click', function (e) {
     e.preventDefault();
@@ -216,6 +226,48 @@ $('.overlay-create').on('click', function (e) {
     if (!(($(e.target).parents('.popup-create').length) || ($(e.target).hasClass('popup-create')))) {
         $('body').css("overflow", "visible");
         $('.overlay-create').removeClass('active');
+        $(".filters__cities-wrap").getNiceScroll().resize();
+    }
+});
+$('.overlay-prof').on('click', function (e) {
+    if (!(($(e.target).parents('.popup-create').length) || ($(e.target).hasClass('popup-create')))) {
+        $('body').css("overflow", "visible");
+        $('.overlay-prof').removeClass('active');
+        $(".filters__cities-wrap").getNiceScroll().resize();
+    }
+});
+$('.overlay-lang').on('click', function (e) {
+    if (!(($(e.target).parents('.popup-create').length) || ($(e.target).hasClass('popup-create')))) {
+        $('body').css("overflow", "visible");
+        $('.overlay-lang').removeClass('active');
+        $(".filters__cities-wrap").getNiceScroll().resize();
+    }
+});
+$('.overlay-about').on('click', function (e) {
+    if (!(($(e.target).parents('.popup-create').length) || ($(e.target).hasClass('popup-create')))) {
+        $('body').css("overflow", "visible");
+        $('.overlay-about').removeClass('active');
+        $(".filters__cities-wrap").getNiceScroll().resize();
+    }
+});
+$('.overlay-kval').on('click', function (e) {
+    if (!(($(e.target).parents('.popup-create').length) || ($(e.target).hasClass('popup-create')))) {
+        $('body').css("overflow", "visible");
+        $('.overlay-kval').removeClass('active');
+        $(".filters__cities-wrap").getNiceScroll().resize();
+    }
+});
+$('.overlay-exp').on('click', function (e) {
+    if (!(($(e.target).parents('.popup-create').length) || ($(e.target).hasClass('popup-create')))) {
+        $('body').css("overflow", "visible");
+        $('.overlay-exp').removeClass('active');
+        $(".filters__cities-wrap").getNiceScroll().resize();
+    }
+});
+$('.overlay-obr').on('click', function (e) {
+    if (!(($(e.target).parents('.popup-create').length) || ($(e.target).hasClass('popup-create')))) {
+        $('body').css("overflow", "visible");
+        $('.overlay-obr').removeClass('active');
         $(".filters__cities-wrap").getNiceScroll().resize();
     }
 });
@@ -297,8 +349,38 @@ $('.lk-r-vac__create').on('click', function (e) {
     $('.overlay-create').addClass('active');
     $('body').css('overflow', 'hidden');
 });
-$('.popup-create__spec').on('click', function (e) {
+$('.popup-create__spec, .lk-s-res__spec a').on('click', function (e) {
     e.preventDefault();
     $('.overlay-spec').addClass('active');
+    $('body').css('overflow', 'hidden');
+});
+$('.modal-obr').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-obr').addClass('active');
+    $('body').css('overflow', 'hidden');
+});
+$('.modal-about').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-about').addClass('active');
+    $('body').css('overflow', 'hidden');
+});
+$('.modal-prof').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-prof').addClass('active');
+    $('body').css('overflow', 'hidden');
+});
+$('.modal-lang').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-lang').addClass('active');
+    $('body').css('overflow', 'hidden');
+});
+$('.modal-kval').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-kval').addClass('active');
+    $('body').css('overflow', 'hidden');
+});
+$('.modal-exp').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-exp').addClass('active');
     $('body').css('overflow', 'hidden');
 });

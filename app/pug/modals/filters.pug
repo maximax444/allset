@@ -268,7 +268,7 @@
                         a(href="") Санкт-Петербург5
             a.popup-create__spec(href="")  Специализация
             label.textarea
-                textarea(name="", cols="30", rows="10" placeholder="Описание вакансии...") 
+                textarea(name="", cols="30", rows="10" placeholder="Описание вакансии...")
             label.small
                 .lk-select
                     input(type="hidden", name="", value="Санкт-Петербург")
@@ -385,3 +385,151 @@
                 a Делопроизводство, ввод данных, систематизация
                 a Архивариус
                 a.popup-spec__more Развернуть +
+.overlay.overlay-lang
+    .popup-create 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .popup-create__title Знание языков
+        form.popup-create__form
+            label
+                .lk-select
+                    input(type="hidden", name="", value="Родной язык")
+                    .lk-select__top Родной язык
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Язык")
+                    .lk-select__top Язык
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label.small
+                .lk-select
+                    input(type="hidden", name="", value="Уровень владения")
+                    .lk-select__top Уровень владения
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            .popup-create__btn.sec
+                button.btn.btn--full Сохранить
+.overlay.overlay-about
+    .popup-create 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .popup-create__title Обо мне
+        form.popup-create__form
+            label.textarea
+                textarea(name="", cols="30", rows="10", placeholder="Введите краткую информацию о себе...")
+            .popup-create__btn.sec
+                button.btn.btn--full Сохранить
+.overlay.overlay-prof
+    .popup-create 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .popup-create__title Профессиональные навыки
+        form.popup-create__form
+            label
+                input(type="text" placeholder="Навык" required)
+            label.textarea
+                textarea(name="" cols="30" rows="10" placeholder="Функции и достижения...")
+            .popup-create__btn.sec
+                button.btn.btn--full Сохранить
+.overlay.overlay-obr
+    .popup-create 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .popup-create__title Образование
+        form.popup-create__form
+            label
+                .lk-select
+                    input(type="hidden", name="", value="Уровень образования")
+                    .lk-select__top Уровень образования
+                    .lk-select__drop 
+                        a(href="") Санкт-Петербург
+                        a(href="") Санкт-Петербург2
+                        a(href="") Санкт-Петербург3
+                        a(href="") Санкт-Петербург4
+                        a(href="") Санкт-Петербург5
+            label.small
+                input(type="text" placeholder="Учебное заведение" required)
+            label.small
+                input(type="text" placeholder="Период обучения" required)
+            label.small
+                input(type="text" placeholder="Факультет" required)
+            label.small
+                input(type="text" placeholder="Специализация" required)
+            .popup-create__btn.sec
+                button.btn.btn--full Сохранить
+.overlay.overlay-exp
+    .popup-create 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .popup-create__title Опыт работы
+        form.popup-create__form
+            label
+                input(type="text" placeholder="Компания" required)
+            label
+                input(type="text" placeholder="Должность" required)
+            label.small
+                input(type="date" placeholder="Начало работы" required)
+            label.small
+                input(type="date" placeholder="Окончание работы" required)
+            .filters__block
+                label.radio
+                    input(type="checkbox" name="fs" checked)
+                    span 
+                    p По настоящее время
+            label.textarea
+                textarea(name="" cols="30" rows="10" placeholder="Функции и достижения...")
+            .popup-create__btn.sec
+                button.btn.btn--full Сохранить
+.overlay.overlay-kval
+    .popup-create 
+        .filters__close 
+            svg(width='29' height='29' viewbox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M2 2L26.9999 26.9999' stroke='white' stroke-width='3')
+                path(d='M27 2L2.00015 26.9999' stroke='white' stroke-width='3')
+        .popup-create__title Повышение квалификации
+        form.popup-create__form
+            label
+                input(type="text" placeholder="Название курсов" required)
+            label.small
+                input(type="text" placeholder="Место прохождения" required)
+            label.small
+                input(type="text" placeholder="Город" required)
+            label
+                input(type="text" placeholder="Период обучения" required)
+            label.scans
+                input(type="file" placeholder="Город" required)
+                .scans__link 
+                    |Добавьте сканы сертификатов:
+                    span
+                        img(src="img/pages/scans.svg", alt="")
+                .scans__wrap.resume-list__imgs 
+                    a.resume-list__img 
+                        img(src="img/pages/resume.png", alt="")
+                    a.resume-list__img 
+                        img(src="img/pages/resume.png", alt="")
+            .popup-create__btn.sec
+                button.btn.btn--full Сохранить

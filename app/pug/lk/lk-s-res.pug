@@ -11,4 +11,187 @@ section.lk
                 | Выйти
                 img(src="img/pages/logout.svg", alt="")
         .lk__cont 
-            
+            .resume__main.lk-s-res__main
+                .resume__img 
+                    img(src="img/pages/resume-person.png", alt="")
+                .resume__main-cont 
+                    .resume__date Резюме от 25.09.2022
+                    .resume__name Иванов Иван
+                    .resume__work.lk-s-res__spec
+                        |Бухгалтер
+                        a(href="")  Изменить
+            .resume__wrap 
+                .resume__col 
+                    h2.resume__subtitle Основная информация
+                    .resume__line
+                        | Дата рождения: 
+                        b 07.10.1992
+                    .resume__line
+                        | Страна, город: 
+                        b Россия, Санкт-Петербург
+                .resume__col 
+                    h2.resume__subtitle Контакты
+                    .vacancy__cont
+                        span
+                            img(src="../img/pages/email.svg", alt="")
+                            | pr@allset.ru
+                        span
+                            img(src="../img/pages/phone.svg", alt="")
+                            | 8 (800) 250-XX-XX
+            .lk-s-res__zp
+                span Желаемая заработная плата
+                .filters__block
+                    .filters__price 
+                        span.first
+                            span 70 000 
+                            | ₽ 
+                        span.last
+                            span 190 000 
+                            | ₽ 
+                    #slider-range
+                    label.radio
+                        input(type="checkbox" name="fs" checked)
+                        span 
+                        p Не публиковать зп
+            .lk-s-res__btns
+                a.btn.modal-obr(href="") Добавить образование
+                a.btn.modal-exp(href="") Добавить опыт работы
+                a.btn.modal-kval(href="") Добавить информацию о повышении квалификации
+                a.btn.modal-lang(href="") Добавить информацию о знании языков
+                a.btn.modal-prof(href="") Добавить информацию о профессиональных навыках
+                a.btn.modal-about(href="") Добавить информацию о себе
+            .resume__block 
+                h2.resume__subtitle 
+                    |Опыт работы: 
+                    br
+                    |8 лет 10 месяцев
+                .resume-period
+                    .resume-period__date 
+                        b Январь 2022 — по настоящее время
+                        | 10 месяцев
+                    .resume-period__cont
+                        .resume-period__title Название компании
+                        .resume-period__subtitle Должность
+                        p.resume-period__text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-exp(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                .resume-period
+                    .resume-period__date 
+                        b Апрель 2021 — Декабрь 2021
+                        | 9 месяцев
+                    .resume-period__cont
+                        .resume-period__title Название компании
+                        .resume-period__subtitle Должность
+                        p.resume-period__text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-exp(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                .resume-period
+                    .resume-period__date 
+                        b Апрель 2015 — Апрель 2021
+                        | 6 лет
+                    .resume-period__cont
+                        .resume-period__title Название компании
+                        .resume-period__subtitle Должность
+                        p.resume-period__text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-exp(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                a.lk-s-res__add.modal-exp(href="") Добавить +
+            .resume__block 
+                h2.resume__subtitle Образование
+                .resume-list 
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  СПБГУ
+                            .resume-list__subtitle 
+                                | Экономический, Санкт-Петербург
+                                br
+                                | Высшее, 09.2004—06.2009
+                            p.resume-list__descr 
+                                | Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                                br
+                                | Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-obr(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                a.lk-s-res__add.modal-obr(href="") Добавить +
+            .resume__block 
+                h2.resume__subtitle Повышение квалификации
+                .resume-list 
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  Бухгалтерия и аудит
+                            .resume-list__subtitle 
+                                | учебный центр “Алево”, Москва
+                                br
+                                | 2011, 6 месяцев
+                        .resume-list__imgs 
+                            a.resume-list__img(data-fancybox href="img/pages/resume.png") 
+                                img(src="img/pages/resume.png", alt="")
+                            a.resume-list__img(data-fancybox href="img/pages/resume.png") 
+                                img(src="img/pages/resume.png", alt="")
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-kval(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  Бухгалтерия и аудит
+                            .resume-list__subtitle 
+                                | учебный центр “Алево”, Москва
+                                br
+                                | 2011, 6 месяцев
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-kval(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                a.lk-s-res__add.modal-kval(href="") Добавить +
+            .resume__block 
+                h2.resume__subtitle Образование
+                .resume-list 
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  Навыки работы с компьютером
+                            p.resume-list__descr.small Уверенный пользователь 1С; пакета MS Office (на уровне эксперта).
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-prof(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  1С: Предприятие
+                            p.resume-list__descr.small Уверенный пользователь 1С; пакета MS Office (на уровне эксперта).
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-prof(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  M.E.Doc 
+                            p.resume-list__descr.small Уверенный пользователь 1С; пакета MS Office (на уровне эксперта).
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-prof(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                a.lk-s-res__add.modal-prof(href="") Добавить +
+            .resume__block 
+                h2.resume__subtitle Знание языков
+                .resume-list 
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  Русский — родной
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-lang(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                    .resume-list__el 
+                        .resume-list__text 
+                            .resume-list__title  Английский — средний
+                        .lk-s-res__change 
+                            a.lk-s-res__red.modal-lang(href="") Редактировать +
+                            a.lk-s-res__del(href="")  Удалить -
+                a.lk-s-res__add.modal-lang(href="") Добавить +
+            .resume__block 
+                h2.resume__subtitle Обо мне
+                p.resume__descr Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.
+                .lk-s-res__change 
+                    a.lk-s-res__red.modal-about(href="") Редактировать +
+                    a.lk-s-res__del(href="")  Удалить -
+            .lk-s-res__bot 
+                button.lk-s-res__save.btn.btn--full(disabled) Сохранить
