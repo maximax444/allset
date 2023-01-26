@@ -278,6 +278,13 @@
 	&__menu
 		display: flex
 		cursor: pointer
+		grid-gap: 15px
+		font-weight: 500
+		font-size: 16px
+		line-height: 19px
+		text-align: right
+		color: #FFFFFF
+		align-items: center
 .footer
 	background: #4E4E4E
 	overflow: hidden
@@ -404,6 +411,9 @@
 		&__menu
 			a
 				font-size: 21px
+	.header
+		&__call, &__lang, &__country
+			display: none
 @media(max-width: 767px)
 	.menu
 		.header
@@ -506,8 +516,11 @@
 			bottom: -70px
 			path.text
 				fill: #000
-	.header-home
+	.header-home, .header-h
 		margin-bottom: 0
+		.header__logo
+			path.text
+				fill: #fff
 	.menu
 		&__menu
 			padding: 35px 0
